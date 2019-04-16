@@ -1,0 +1,379 @@
+.rubrik {
+ text-shadow: 2px 2px #4dd0e1;
+    text-align: center;
+    font-size: 36px;
+    font-family: sans-serif;
+    text-shadow: 0 0 3px #4dd0e1;
+}
+
+.underrubrik {
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.navbar-brand {
+border-left: solid;
+border-right: solid;
+border-width: 1px;
+border-color: #4dd0e1;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+
+
+
+    -webkit-box-shadow: 0px 0px 4px #4195fc;
+       -moz-box-shadow: 0px 0px 4px #4195fc;
+            box-shadow: 0px 0px 4px #4195fc;
+}
+
+
+.block {
+border-left: solid;
+border-right: solid;
+border-width: 1px;
+border-color: #4dd0e1;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+
+
+
+    -webkit-box-shadow: 0px 0px 4px #4195fc;
+       -moz-box-shadow: 0px 0px 4px #4195fc;
+            box-shadow: 0px 0px 4px #4195fc;
+}
+
+
+.img-responsive {
+	align-content: center;
+}
+.infotext {
+padding-left: 20px;
+text-align: left;
+font-family: sans-serif;
+font-size: 20px;
+	margin-left: 20px;
+}
+
+
+
+.chkbogame {
+    position: relative;
+    top: 0px;
+    right: 7px;
+    bottom: 0px;
+    color: gray;
+}
+.chkbo1surf {
+    position: relative;
+    top: 0px;
+    right: 8px;
+    color: gray;
+}
+.chkbo2office {
+    position: relative;
+    top: 0px;
+    right: 14px;
+    color: gray;
+}
+.chkbo3server {
+    position: relative;
+    top: 0px;
+    right:10px;
+    color: gray;
+}
+
+
+
+
+
+
+.chkbo4low {
+    position: relative;
+    top: 0px;
+    right: 4px;
+    color: gray;
+}
+.chkbo5mid {
+    position: relative;
+    top: 0px;
+    right: 6px;
+    color: gray;
+}
+.chkbo6high {
+    position: relative;
+    top: 0px;
+    right: 1px;
+    color: gray;
+}
+
+/*
+
+.vl {
+    border-left: 6px solid black;
+    height: 500px;
+    position: absolute;
+    left:120px;
+    margin-left: -3px;
+    
+}
+*/
+
+
+
+.chkboxgame {
+    position: relative;
+    top: 0px;
+    right: 2px;
+}
+.chkbox1surf {
+    position: relative;
+    top: 0px;
+    right: 3px;
+}
+.chkbox2office {
+    position: relative;
+    top: 0px;
+    right: 9px;
+}
+.chkbox3server {
+    position: relative;
+    top: 0px;
+    right:5px;
+}
+
+
+
+
+
+.chkbox4low {
+    position: relative;
+    top: 0px;
+    left: 2px;
+}
+.chkbox5mid {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.chkbox6high {
+    position: relative;
+    top: 0px;
+    left: 4px;
+}
+
+
+
+
+.header {
+opacity:0.7;
+}
+
+
+
+
+
+.formen {
+
+text-align:center;
+
+}
+
+
+/*
+.knapp {
+
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-bottom:50px;
+    padding-left: 10px;
+
+}
+
+*/
+
+.boxa {
+    align-content: center;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+}
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+
+
+
+
+body {
+    background-repeat: no-repeat;
+    background-image: url("/images/q.jpg"); 
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.con1{
+
+  padding: 90px 0;
+  background-color: #C9D7D9;
+  width: auto;
+  opacity: 0.8;
+  padding-left: 100px;
+  padding-right: 100px;
+  
+
+}
+
+.con2{
+  padding: 100px 0;
+  background-color: #C9D7D9;
+  width: 100%;
+  opacity: 0.8;
+  padding-left: 200px;
+  padding-right: 200px;
+
+}
+.container {
+
+position: relative;
+right: 0px;
+left: 200px;
+}
+
+
+.formi {
+padding-top: 100px;
+padding-left: 700px;
+padding-right: 700px;
+padding-bottom: 100px;
+}
+
+
+.btn {
+    align-content: center;
+    color: black;
+
+}
+
+
+ /* The sidebar menu */
+.sidenav {
+    height: 1380px; /* Full-height: remove this if you want "auto" height */
+    width: 300px; /* Set the width of the sidebar */
+position: relative;
+top: -70px;
+    background-color: #111; /* Black */
+
+    opacity: 0.7;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.h3comp{
+color: white;
+}
+
+
+
+.strek {
+border-top: 1px solid #4dd0e1;
+padding-top:10px;
+color: white;
+
+}
+
+
+
+
+#price-max {
+color: white;
+}
+
+
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.prisslide {
+padding-left:700px;
+padding-right:700px;
+
+}
+
+.sok {
+padding-top:20px;
+padding-left:15px;
+padding-right:15px;
+}
+
+
+.prisslide2 {
+padding-left:15px;
+padding-right:15px;
+}
+
+

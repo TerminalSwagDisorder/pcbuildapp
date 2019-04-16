@@ -1,0 +1,202 @@
+<template name="yourcomp">
+<h1 align="center">Here is your computer!</h1>
+
+<div id="mySidenav" class="sidenav">
+
+
+<div class="formen">
+
+<div id="app">
+
+<form>
+
+
+<div class="sok">
+ <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+</div>
+
+<section>
+
+    <fieldset>
+      <h3 class="h3comp">Please set your price</h3>
+<br>
+<div class="prisslide2">
+{{> hello}}
+</div>
+
+
+
+
+
+    <h3 class="strek">Computer type</h3>
+
+
+
+      <ul style="list-style-type:none">
+          <li>
+            <label for="title_1">
+<div class="chkbogame">
+              <input type="checkbox" id="title_1" name="title" value="M." >
+              Gaming
+</div>
+            </label>
+          </li>
+          <li>
+            <label for="title_2">
+<div class="chkbo1surf">
+              <input type="checkbox" id="title_2" name="title" value="Ms.">
+              Surfing
+</div>
+            </label>
+          </li>
+<li>
+            <label for="title_3">
+<div class="chkbo2office">
+              <input type="checkbox" id="title_3" name="title" value="Ms.">
+              Office
+</div>
+            </label>
+          </li>
+<li>
+            <label for="title_4">
+<div class="chkbo3server">
+              <input type="checkbox" id="title_4" name="title" value="Ms.">
+              Server
+</div>
+            </label>
+          </li>
+      </ul>
+
+
+
+
+
+      <h3 class="strek">Preformance</h3>
+
+
+
+
+      <ul style="list-style-type:none">
+          <li>
+            <label for="title_5">
+<div class="chkbo4low">
+              <input type="checkbox" id="title_5" name="title" value="M." >
+              Low end
+</div>
+            </label>
+          </li>
+   <li>
+            <label for="title_6">
+<div class="chkbo5mid">
+              <input type="checkbox" id="title_6" name="title" value="M." >
+              Mid end
+</div>
+            </label>
+          </li>
+   <li>
+            <label for="title_7">
+<div class="chkbo6high">
+              <input type="checkbox" id="title_7" name="title" value="M." >
+              High end
+</div>
+            </label>
+          </li>
+</ul>
+
+
+
+
+
+
+      <h3 class="strek">Set preferences (Optional)</h3>
+
+
+
+
+<select>
+  <option value="null">Select RAM</option>
+  <option value="4GB">4GB</option>
+  <option value="8GB">8GB</option>
+  <option value="16GB">16GB</option>
+  <option value="32GB">32GB</option>
+</select>
+
+
+
+
+<select>
+  <option value="null">Select CPU</option>
+  <option value="AMD">AMD</option>
+  <option value="INTEL">INTEL</option>
+</select>
+
+<br>
+<br>
+
+
+<select>
+  <option value="null">Select GPU</option>
+  <option value="AMD">AMD</option>
+  <option value="NVIDIA">NVIDIA</option>
+</select>
+
+
+
+
+
+
+
+
+
+
+<select>
+ 
+  <li class="dropdown">
+    <option value="null"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Select Network<span class="caret"></span></a></option>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-2" href="#">Wireless</a></li>
+
+
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Wired <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+        <option>  <li><a tabindex="-1" href="#">100 Mbits/s</a></li> </option>
+        <option>  <li><a tabindex="-1" href="#">1000 Mbits/s</a></li> </option>
+        <option> <li><a tabindex="-1" href="#">10 Gbits/s</a></li> </option>
+
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+</select>
+
+    </fieldset>
+    
+    
+</section>
+
+</form>
+
+
+      <h3 class="strek"></h3>
+
+<div class="knapp2">
+
+<button type="button">Search</button>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</template>
+
+
+
