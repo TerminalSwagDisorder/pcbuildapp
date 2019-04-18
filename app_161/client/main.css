@@ -220,7 +220,7 @@ text-align:center;
 
 body {
     background-repeat: no-repeat;
-    background-image: url("/images/q.jpg"); 
+    background-image: url("/images/comp.jpg"); 
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -230,7 +230,7 @@ body {
 .con1{
 
   padding: 90px 0;
-  background-color: #C9D7D9;
+
   width: auto;
   opacity: 0.8;
   padding-left: 100px;
@@ -241,7 +241,7 @@ body {
 
 .con2{
   padding: 100px 0;
-  background-color: #C9D7D9;
+
   width: 100%;
   opacity: 0.8;
   padding-left: 200px;
@@ -277,9 +277,7 @@ padding-bottom: 100px;
     width: 300px; /* Set the width of the sidebar */
 position: relative;
 top: -70px;
-    background-color: #111; /* Black */
-
-    opacity: 0.7;
+    background-color:#636363;
 }
 
 /* The navigation menu links */
