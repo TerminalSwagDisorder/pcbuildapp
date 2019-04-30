@@ -1,3 +1,4 @@
+/*
 cases = new Mongo.Collection("cases");
 
 if (cases.find().count() === 0) {
@@ -10,5 +11,6 @@ if (cases.find().count() === 0) {
     cases.insert(item);
   })
 }
-console.log("collection " + cases.findOne( {name: "NZXT Manta"} ));
+//console.log("collection " + cases.findOne( {name: "NZXT Manta"} ));
 console.log("collection " + cases.find().count());
+*/
