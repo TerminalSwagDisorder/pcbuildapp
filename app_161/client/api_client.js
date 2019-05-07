@@ -1,27 +1,93 @@
-Meteor.call('geoJsonForIp', '192.168.42.100', function(err,res){ 
-    console.log(err);
+Meteor.call('cpu', function(err,res){ 
+    if (err) {  
+  console.log(err); 
+} else {
     console.log(res);
-
-});
-
-
-
-
-/*
-Template.homesida.helpers({
-//open datasette with this [ 13:14:30 | benjaminlinux | ~/github/pcbuildapp/pcbuildapp $ datasette --cors pcbuildapp.db ]
-
-fetch('http://localhost:8001/pcbuildapp-1170c5b/memory.json')  
-.then(
-function(response){
-return response.json()
-})
-.then(function(data){
-obj.table.push(data);
-//console.log(data) //change to something that shows on site
 }
-)
-var fs = require('fs');
-fs.writeFile('myjsonfile.json', json, 'utf8', callback);
 });
+/*
+Meteor.call('cpu', function(err,res){ 
+    if (err) {  
+  console.log(err); 
+} else {
+    console.log("loaded cpu data")
+    let datadiv = document.getElementById("mydata")
+    
+    datadiv.innerHTML = JSON.stringify(res)    
+    console.log(res);
+}
+
+});
+*/
+Meteor.call('cpu-cooler', function(err,res){ 
+    if (err) {  
+  console.log(err); 
+} else {
+    console.log(res);
+}
+
+});
+/*
+Meteor.call('fan', function(err,res){ 
+    if (err) {  
+  console.log(err); 
+} else {
+    console.log(res);
+}
+
+});
+Meteor.call('gpu', function(err,res){ 
+    if (err) {  
+  console.log(err); 
+} else {
+    console.log(res);
+}
+
+});
+Meteor.call('memory', function(err,res){ 
+    if (err) {  
+  console.log(err); 
+} else {
+    console.log(res);
+}
+
+});
+Meteor.call('motherboard', function(err,res){ 
+    if (err) {  
+  console.log(err); 
+} else {
+    console.log(res);
+}
+});
+Meteor.call('psu', function(err,res){ 
+    if (err) {  
+  console.log(err); 
+} else {
+    console.log(res);
+}
+
+});
+Meteor.call('storage', function(err,res){ 
+    if (err) {  
+  console.log(err); 
+} else {
+    console.log(res);
+}
+});
+Meteor.call('wired', function(err,res){ 
+    if (err) {  
+  console.log(err); 
+} else {
+    console.log(res);
+}
+});
+Meteor.call('wireless', function(err,res){ 
+    if (err) {  
+  console.log(err); 
+} else {
+    console.log(res);
+}
+
+});
+
 */

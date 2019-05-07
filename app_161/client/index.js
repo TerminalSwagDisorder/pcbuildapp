@@ -1,13 +1,3 @@
 /*
-http://localhost:8001/pcbuildapp-1170c5b/case.json
-http://localhost:8001/pcbuildapp-1170c5b/cpu.json
-http://localhost:8001/pcbuildapp-1170c5b/cpu-cooler.json
-http://localhost:8001/pcbuildapp-1170c5b/fan.json
-http://localhost:8001/pcbuildapp-1170c5b/gpu.json
-http://localhost:8001/pcbuildapp-1170c5b/memory.json
-http://localhost:8001/pcbuildapp-1170c5b/motherboard.json
-http://localhost:8001/pcbuildapp-1170c5b/psu.json
-http://localhost:8001/pcbuildapp-1170c5b/storage.json
-http://localhost:8001/pcbuildapp-1170c5b/wired.json
-http://localhost:8001/pcbuildapp-1170c5b/wireless.json
+'http://localhost:8001/pcbuildapp-1170c5b/case.json', 'http://localhost:8001/pcbuildapp-1170c5b/cpu.json', 'http://localhost:8001/pcbuildapp-1170c5b/cpu-cooler.json', 'http://localhost:8001/pcbuildapp-1170c5b/fan.json', 'http://localhost:8001/pcbuildapp-1170c5b/gpu.json', 'http://localhost:8001/pcbuildapp-1170c5b/memory.json', 'http://localhost:8001/pcbuildapp-1170c5b/motherboard.json', 'http://localhost:8001/pcbuildapp-1170c5b/psu.json', 'http://localhost:8001/pcbuildapp-1170c5b/storage.json', 'http://localhost:8001/pcbuildapp-1170c5b/wired.json', 'http://localhost:8001/pcbuildapp-1170c5b/wireless.json'
 */

@@ -1,6 +1,8 @@
 <template name="completed">
 <h1 align="center">Search for completed builds</h1>
+<div id="mydata">
 
+</div>
 <div id="mySidenav" class="sidenav">
 
 
@@ -20,6 +22,15 @@
     <fieldset>
       <h3 class="h3comp">Please set your price</h3>
 <br>
+
+
+
+
+<table>
+{{#each columns}}
+<th>{{.}}</th>
+{{/each}}
+</table>
 <div class="prisslide2">
 {{> hello}}
 </div>

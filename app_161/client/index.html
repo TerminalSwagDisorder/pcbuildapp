@@ -1,3 +1,84 @@
+<template name="wille">
+            <div id="app">          
+  <h3 class="text-muted" id="tribute">This page is a tribute to my cat "Wille" who died on 11.03.2018</h3>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/1.png" class="img-responsive" alt="Wille sleeping">
+                        <div class="carousel-caption">
+                            <h3>Wille just sleeping</h3>
+                            <p id="wille"> </p>
+                        </div>
+                    </div>
+
+                    <div class="item" id="willebox">
+                        <img src="images/2.jpg" class="img-responsive" alt="Wille and Walle in a box">
+                        <div class="carousel-caption">
+                            <h3>Wille and my other cat Walle sleeping in a box</h3>
+                            <p id="wille"> </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/3.jpg" class="img-responsive" alt="Wille and Walle sleeping">
+                        <div class="carousel-caption">
+                            <h3>The cats sleeping again</h3>
+                            <p id="wille"> </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+            </div>
+            <br>
+            <h2 class="text-danger">Reader discretion is advised</h2>
+            <br>
+            <br>
+            <div class="col-md-6">
+                <h3 id="wille-head">Willes last living days</h3>
+                <p id="wille">Wille died on 11.03.2018 from a kidney problem, I haven't been fully told what it was he died from. We started to notice some days before we first sent him to the vet that he behaved weirdly: he didn't eat or drink, he went under my parent’s bed (even though he usually never went there), he didn't pee, he walked weirdly, and he was just out of it. We first thought he just had problem walking, but we also noticed that when you picked him up, he wouldn't like it. It was only at the vet for the first time, someone (the vets themselves) noticed that he has kidney stones. The vets took him for like a day, and they said that the time we brought him there was literally the last second. They also told us that his bladder was full of pee and blood. We were given a prescription for him (e.g. painkillers). The painkillers made him zone out even more. We also noticed that he still didn't feel well, so he was sent to the vet again the next day from that. He was then at the vet for the rest of his living days. We went to visit him at the vet the day before his death, he didn't look well at all. He couldn't move at except for one of his eyes. We then decided from the vet’s recommendation that if he didn't seem better, he'd be euthanized. My parents went to visit him the next day, and he only seemed worse. He was then euthanized on the spot in my mother’s arms.</p>
+            </div>
+            <div class="col-md-6">
+                <h3 id="wille-head">Wille as a cat</h3>
+                <p id="wille">Wille was as a cat very playful, calm and adventurous. He was about 10 years old. He'd let anyone pet him, and he'd like it unlike our second cat "Walle". He'd catch mice and other rodent every summer for the extent of his heart, and he'd give all of them to Walle. He was an outdoor cat, who'd spend most of the summer outside, he was once even a whole week outside without coming in. When someone surprised him, by e.g. touching him on the back unexpectedly, he'd make a funny "brrr" noise.</p>
+                <h3 id="wille-head">The sad truth</h3>
+                <p id="wille">It's hard to grasp the truth that he is gone. My whole family thought that Walle would have gone away first, because he had a few health problems, while Wille had none prior to this incident. We got his ashes 21.03.2018, and we're going to honor him some way this summer. We have already thought of getting another cat so that Walle has someone to play with. Walle has also become more demanding because Wille is not watching his back. Everything just happened so suddenly.</p>
+            </div>
+        <br>
+        <br>
+        <br>
+        <br>
+</div>
+</template>
+<template name="stop">
+  {{#each thumb}}
+    <tr> 
+      <td class="image">
+        <img src="{{this}}">
+      </td>
+    </tr>
+  {{/each}}
+</template>
+
+
+
 <template name="build2">
 
 
