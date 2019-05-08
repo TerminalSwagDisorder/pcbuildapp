@@ -1,34 +1,3 @@
-<template name="telize">
-
-  <p>Query the location data for an IP</p>
-
-  <input id="ipv4" name="ipv4" type="text" />
-
-  <button>Look up location</button>
-
-  <!-- set the data context -->
-
-  {{#with location}}
-
-    <!-- if location has an error property, display it -->
-
-    {{#if error}}
-
-      <p>There was an error: {{error.errorType}} {{error.message}}!</p>
-
-    {{else}}
-
-      <p>The IP address {{location.ip}} is in {{location.city}}
-
-         ({{location.country}}).</p>
-
-    {{/if}} 
-
-  {{/with}}
-
-</template>
-
-
 <template name="homesida">
 
 <div class="index">
@@ -40,6 +9,77 @@
 		<em>Build your computer</em><br>
 <br>
 <br>
+
+
+
+
+
+
+
+
+
+
+
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/dat2.jpg" class="img-responsive" alt="Wille sleeping">
+                        <div class="carousel-caption">
+                            <h3>Prebuilds #1</h3>
+                            <p id="wille"> </p>
+                        </div>
+                    </div>
+
+                    <div class="item" id="willebox">
+                        <img src="images/dat1.jpg" class="img-responsive" alt="Wille and Walle in a box">
+                        <div class="carousel-caption">
+                            <h3>Wille and my other cat Walle sleeping in a box</h3>
+                            <p id="wille"> </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/pictures/rsz_2012-09-15_115305.jpg" class="img-responsive" alt="Wille and Walle sleeping">
+                        <div class="carousel-caption">
+                            <h3>The cats sleeping again</h3>
+                            <p id="wille"> </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="homecontent">
 <div class="con1">
@@ -73,6 +113,51 @@
         </div>
       </div>
     </section>
+</div>
+</div>
+
+
+      <div class="container marketing">
+	<div class="bilder">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="images/4.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>You pick the parts</h2>
+            <p>After chosing the pc parts that suits your needs, you may order them directly! We will get the parts for you and ship them anywhere in the world.</p>
+            <button type="button" style="
+
+
+    -webkit-box-shadow: 0px 0px 4px #4195fc;
+       -moz-box-shadow: 0px 0px 4px #4195fc;
+            box-shadow: 0px 0px 4px #4195fc;" onclick="alert('Please wait..')">View</button>
+
+
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="images/2.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>We build it for you!</h2>
+            <p>Once you have chosen the computer parts, you may order the parts and build the computer yourself, or you could just let us handle it for an affordable fee!</p>
+           <button type="button" style="
+
+
+    -webkit-box-shadow: 0px 0px 4px #4195fc;
+       -moz-box-shadow: 0px 0px 4px #4195fc;
+            box-shadow: 0px 0px 4px #4195fc;" onclick="alert('Please wait..')">View</button>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="images/3.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>IT-support</h2>
+            <p>If you have any questions regarding building the computer, shipping or something else, do not hesitate to contact us by e-mail or by calling us.</p>
+          <button type="button" style="
+
+
+    -webkit-box-shadow: 0px 0px 4px #4195fc;
+       -moz-box-shadow: 0px 0px 4px #4195fc;
+            box-shadow: 0px 0px 4px #4195fc;" onclick="alert('E-mail address: Benben@hotmail.com Phone: 203020039')">View</button>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
 </div>
 </div>
 <br>

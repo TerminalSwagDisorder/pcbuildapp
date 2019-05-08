@@ -30,11 +30,21 @@ border-color: #4dd0e1;
 }
 
 
+.navbar {
+
+background-color: #333;
+color:#fff;
+
+}
+
+
+
 .block {
 border-left: solid;
 border-right: solid;
 border-width: 1px;
 border-color: #4dd0e1;
+
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
             border-radius: 4px;
@@ -55,7 +65,7 @@ padding-left: 20px;
 text-align: left;
 font-family: sans-serif;
 font-size: 20px;
-	margin-left: 20px;
+margin-left: 20px;
 }
 
 
@@ -168,13 +178,11 @@ font-size: 20px;
 
 
 
-.header {
-opacity:0.7;
+
+.navbar-inverse {
+
+    border-width: none;
 }
-
-
-
-
 
 .formen {
 
@@ -182,7 +190,12 @@ text-align:center;
 
 }
 
+.knapp2 {
 
+    padding-bottom:50px;
+    margin-bottom:0px;
+
+}
 /*
 .knapp {
 
@@ -219,8 +232,12 @@ text-align:center;
 
 
 body {
+    
+    min-height: 100%;
+    background-position:center;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("/images/comp.jpg"); 
+    background-image: url("/images/comp3.jpg");
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -229,25 +246,29 @@ body {
 
 .con1{
 
-  padding: 90px 0;
-
+margin-top: 50px;
+text-align: center;
   width: auto;
-  opacity: 0.8;
   padding-left: 100px;
   padding-right: 100px;
-  
+
 
 }
 
 .con2{
-  padding: 100px 0;
 
+
+margin-top: 50px;
+margin-bottom: 100px;
+text-align: center;
   width: 100%;
-  opacity: 0.8;
+
   padding-left: 200px;
   padding-right: 200px;
 
 }
+
+
 .container {
 
 position: relative;
@@ -260,7 +281,7 @@ left: 200px;
 padding-top: 100px;
 padding-left: 700px;
 padding-right: 700px;
-padding-bottom: 100px;
+padding-bottom: 400px;
 }
 
 
@@ -273,11 +294,11 @@ padding-bottom: 100px;
 
  /* The sidebar menu */
 .sidenav {
-    height: 1380px; /* Full-height: remove this if you want "auto" height */
+    height: 876px ; /* Full-height: remove this if you want "auto" height */
     width: 300px; /* Set the width of the sidebar */
 position: relative;
-top: -70px;
-    background-color:#636363;
+margin-top: -21px;
+    background-color:#333;
 }
 
 /* The navigation menu links */
@@ -300,21 +321,30 @@ color: white;
 
 
 
+
 .strek {
-border-top: 1px solid #4dd0e1;
-padding-top:10px;
+
 color: white;
 
 }
 
+.test {
+
+border-top: solid;
+border-color: #4dd0e1;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
 
 
+    -webkit-box-shadow: 0px 0px 4px #4195fc;
+       -moz-box-shadow: 0px 0px 4px #4195fc;
+            box-shadow: 0px 0px 4px #4195fc;
+}
 
 #price-max {
 color: white;
 }
-
-
 
 .slidecontainer {
     width: 100%; /* Width of the outside container */
@@ -374,4 +404,36 @@ padding-left:15px;
 padding-right:15px;
 }
 
+.container.marketing {
+
+    position: relative;
+    left: 40px;
+    margin-top: 100px;
+
+
+}
+
+.btn btn-secondary {
+
+color: red;
+
+}
+
+.bilder {
+padding-top:20px;
+border-top: solid 1px;
+padding-bottom:20px;
+border-bottom: solid 1px;
+}
+
+
+.img {
+  height: 100%;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 

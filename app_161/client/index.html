@@ -1,11 +1,3 @@
-<template name="select">
-<select id="cpuselect">
-  <option value="null">Select CPU</option>
-  <option value="http://localhost:8001/pcbuildapp-1170c5b.json?sql=select+*+from+cpu+where+%22name%22+like+%27%25AMD%25%27" {{amd}}>AMD</option>
-  <option value="http://localhost:8001/pcbuildapp-1170c5b?sql=select+*+from+cpu+where+%22name%22+like+%27%25Intel%25%27" {{intel}}>INTEL</option>
-</select>
-</template>
-
 <template name="build2">
 
 
@@ -122,8 +114,13 @@
 </select>
 
 
-  {{> select}}
 
+
+<select>
+  <option value="null">Select CPU</option>
+  <option value="AMD">AMD</option>
+  <option value="INTEL">INTEL</option>
+</select>
 
 
 
