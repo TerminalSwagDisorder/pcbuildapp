@@ -14,9 +14,10 @@
 
     <fieldset>
       <h3>Please set your price<strong><abbr title="required">*</abbr></strong></h3>
-<div class="prisslide">
-{{> hello}}
-</div>
+ <form>
+Budget:<br>
+  <input type="text" name="Price"><br>
+</form> 
 <p>_________________________________________________________________________________</p>
 
 
@@ -185,12 +186,12 @@ $(document).ready(function(){
 <br>
 <div class="knapp">
 
-<button type="button" style="
+  <input type="submit" value="Build my PC" style="
 
 
     -webkit-box-shadow: 0px 0px 4px #4195fc;
        -moz-box-shadow: 0px 0px 4px #4195fc;
-            box-shadow: 0px 0px 4px #4195fc;" onclick: href="yourcomp">Build my PC</button>
+            box-shadow: 0px 0px 4px #4195fc;" onclick: href="yourcomp">
 </div>
 {{orderList}}
 
