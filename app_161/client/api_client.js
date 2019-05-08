@@ -1,11 +1,11 @@
-Meteor.call('cpu', function(err,res){ 
+    /*Meteor.call('cpu', function(err,res){ 
     if (err) {  
   console.log(err); 
 } else {
     console.log(res);
 }
 });
-/*
+
 Meteor.call('cpu', function(err,res){ 
     if (err) {  
   console.log(err); 

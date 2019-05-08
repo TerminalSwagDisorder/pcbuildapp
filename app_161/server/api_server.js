@@ -1,3 +1,7 @@
+
+
+
+/*
 Meteor.methods({
   
   'cpu': function () {
@@ -12,11 +16,6 @@ Meteor.methods({
     return response;
   }
 });
-
-
-
-
-/*
 
 Meteor.methods({
   

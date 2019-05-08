@@ -1,3 +1,4 @@
+/*
 if (Meteor.isClient) {
 
   Template.pc.helpers({
@@ -9,7 +10,8 @@ if (Meteor.isClient) {
 
 
   });
-/*
+};
+
   Template.pc.events({
     'click button': function () {
       // increment the counter when button is clicked
