@@ -2,7 +2,7 @@ FlowRouter.route('/', {
   name: 'home',
   action() {
     GAnalytics.pageview();
-    BlazeLayout.render('MainLayout', {main: 'laz'});
+    BlazeLayout.render('MainLayout', {main: 'homesida'});
   }
 });
 
