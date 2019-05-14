@@ -17,12 +17,20 @@ session = Session(bind=engine)
 
 
 def transform(key,value):
-    #remove one character at the beginning
+    #remove characters at the beginning
     if key == "price":
         value = value[1:]
         return str(value)
         if value == str(value):
             return float(str(value))
+    elif key == "price/gb":
+        value = value[1:]
+        return str(value)
+        if value == str(value):
+            return float(str(value))
+    elif key == "socket":
+        value = value[3:]
+        return str(value)
     #remove characters at the end
     elif key == "tdp":
         value = value[:-2]
@@ -30,21 +38,9 @@ def transform(key,value):
     elif key == "wattage":
         value = value[:-2]
         return int(value)
-    elif key == "price/gb":
-        value = value[:-2]
-        return int(value)
-    elif key == "socket":
-        value = value[:-3]
-        return str(value)
     else:
         return value
 
-
-print("\nRegion changed to De")
-'''
-for i in cpu_info:
-    print(i)
-'''
 
 
 print("Inserting data into database")
@@ -54,66 +50,44 @@ metadata = MetaData(bind=engine)
 
 # table
 
-cpu = Table("cpu", metadata,
+wireless_network = Table("wireless_network", metadata,
 	Column("id", INTEGER, primary_key=True, autoincrement=True),
 	Column("name", TEXT),
-	Column("core-count", TEXT),
-	Column("core-clock", TEXT),
-	Column("boost-clock", TEXT),
-	Column("tdp", INTEGER),
-	Column("integrated-graphics", TEXT),
-	Column("simultaneous-multithreading", TEXT),
+	Column("protocol", TEXT),
+	Column("interface", TEXT),
+	Column("color", TEXT),
 	Column("ratings-count", TEXT),
 	Column("price", INTEGER)
 )
 
-'''
-cpu = Table('cpu', metadata,
-    Column('name', TEXT),
-    Column('core-clock', TEXT),
-    Column('boost-clock', TEXT),
-    Column('core-count', TEXT),
-    Column('tdp', Integer),
-    Column('ratings-count', TEXT),
-    Column('price', Integer),
-	Column("integrated-graphics", TEXT),
-	Column("simultaneous-multithreading", TEXT),
-    Column('id', TEXT, primary_key=True)
-)
-'''
-
-print("Total CPU pages:", part_lists.list_page_count("cpu", region="de"))
+print("Total wireless_network pages:", part_lists.list_page_count("wireless-network-card", region="de"))
 
 a = 0
-tot_cpu = part_lists.list_page_count("cpu", region="de")
+tot_wireless_network = part_lists.list_page_count("wireless-network-card", region="de")
 
 print("\nExtracting and updating data")
 
 # extraction
-#print("Page #",a)
-#while a < tot_cpu:
-#    print("\nPage #",a+1,"\n")
-#    a += 1
     
-cpu_info =  part_lists.get_list("cpu", page=0, region="de")
-cpu_info = [{key:transform(key,value) for key,value in cpu.items()} for cpu in cpu_info]
+wireless_network_info =  part_lists.get_list("wireless-network-card", page=0, region="de")
+wireless_network_info = [{key:transform(key,value) for key,value in wireless_network.items()} for wireless_network in wireless_network_info]
 
         #insert in chunks
-page_length = len(part_lists.get_list("cpu", a))
+page_length = len(part_lists.get_list("wireless-network-card", a))
 cursor = 0
 chunk_size = 50
 while cursor < page_length:
         # insert
-    i = insert(cpu)
-    i = i.values(cpu_info[cursor:cursor+chunk_size])
+    i = insert(wireless_network)
+    i = i.values(wireless_network_info[cursor:cursor+chunk_size])
+    session.add_all
     session.execute(i)
     session.commit()
     cursor+=chunk_size
 
     # delete
-    dlt = cpu.delete().where(cpu.c.price == '')
+    dlt = wireless_network.delete().where(wireless_network.c.price == '')
     session.execute(dlt)
     session.commit()
 print("\nInsertion done")
 
-print("Inserting data into database")
