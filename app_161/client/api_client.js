@@ -1,3 +1,11 @@
+Meteor.call('whole_database', function(err,res){ 
+    if (err) {  
+  console.log(err); 
+} else {
+    console.log(res);
+}
+
+});
     /*Meteor.call('cpu', function(err,res){ 
     if (err) {  
   console.log(err); 
@@ -19,6 +27,7 @@ Meteor.call('cpu', function(err,res){
 
 });
 */
+/*
 Meteor.call('cpu-cooler', function(err,res){ 
     if (err) {  
   console.log(err); 
@@ -27,6 +36,7 @@ Meteor.call('cpu-cooler', function(err,res){
 }
 
 });
+*/
 /*
 Meteor.call('fan', function(err,res){ 
     if (err) {  

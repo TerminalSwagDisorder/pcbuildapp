@@ -1,4 +1,16 @@
+Meteor.methods({
+  
+  'whole_database': function () {
+      console.log('Got the whole database');
+    // Construct the URL
 
+//get this to get every separate url
+    var apiUrl = 'http://localhost:8001/pcbuildapp-1170c5b.json?_size=max';
+    // query the API
+    var response = HTTP.get(apiUrl).data;
+    return response;
+  }
+});
 
 
 /*
@@ -31,6 +43,7 @@ Meteor.methods({
   }
 });
 */
+/*
 Meteor.methods({
   
   'cpu-cooler': function () {
@@ -44,6 +57,7 @@ Meteor.methods({
     return response;
   }
 });
+*/
 /*
 
 Meteor.methods({
