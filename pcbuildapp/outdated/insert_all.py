@@ -6,7 +6,7 @@ from sqlalchemy.sql.expression import ColumnClause
 from sqlalchemy.sql import table, column, select, update, insert, delete
 from sqlalchemy.ext.declarative import *
 from sqlalchemy import create_engine
-engine = create_engine('sqlite:///E:\\Skola\\pcbuildapp\\pcbuildapp.db',echo=True)
+engine = create_engine('sqlite:////home/benjaminlinux/github/pcbuildapp/pcbuildapp/pcb.db', echo=True, pool_pre_ping=True)
 from PCPartPicker_API import pcpartpicker
 
 Session = sessionmaker(bind=engine)
