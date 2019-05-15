@@ -1,3 +1,4 @@
+/*
 Meteor.call('whole_database', function(err,res){ 
     if (err) {  
   console.log(err); 
@@ -6,14 +7,8 @@ Meteor.call('whole_database', function(err,res){
 }
 
 });
-    /*Meteor.call('cpu', function(err,res){ 
-    if (err) {  
-  console.log(err); 
-} else {
-    console.log(res);
-}
-});
-
+*/
+/*
 Meteor.call('cpu', function(err,res){ 
     if (err) {  
   console.log(err); 
@@ -27,7 +22,14 @@ Meteor.call('cpu', function(err,res){
 
 });
 */
-/*
+Meteor.call('cpu', function(err,response){ 
+    if (err) {  
+  console.log(err); 
+} else {
+    console.log(response);
+}
+});
+
 Meteor.call('cpu-cooler', function(err,res){ 
     if (err) {  
   console.log(err); 
@@ -36,9 +38,8 @@ Meteor.call('cpu-cooler', function(err,res){
 }
 
 });
-*/
-/*
-Meteor.call('fan', function(err,res){ 
+
+Meteor.call('case', function(err,res){ 
     if (err) {  
   console.log(err); 
 } else {
@@ -100,4 +101,4 @@ Meteor.call('wireless', function(err,res){
 
 });
 
-*/
+

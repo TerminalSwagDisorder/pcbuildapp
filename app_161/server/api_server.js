@@ -5,15 +5,15 @@ Meteor.methods({
     // Construct the URL
 
 //get this to get every separate url
-    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4.json?_size=max';
+    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4.json?_size=max&_shape=array';
     // query the API
     var response = HTTP.get(apiUrl).data;
     return response;
   }
 });
 
-
 /*
+
 Meteor.methods({
   
   'cpu': function () {
@@ -28,7 +28,7 @@ Meteor.methods({
     return response;
   }
 });
-
+*/
 Meteor.methods({
   
   'cpu': function () {
@@ -36,14 +36,13 @@ Meteor.methods({
     // Construct the URL
 
 //get this to get every separate url
-    var apiUrl = 'http://localhost:8001/pcbuildapp-1170c5b/cpu.json?_size=max';
+    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4/cpu.json?_size=max&_shape=array';
     // query the API
     var response = HTTP.get(apiUrl).data;
     return response;
   }
 });
-*/
-/*
+
 Meteor.methods({
   
   'cpu-cooler': function () {
@@ -51,23 +50,22 @@ Meteor.methods({
     // Construct the URL
 
 //get this to get every separate url
-    var apiUrl = 'http://localhost:8001/pcbuildapp-1170c5b/cpu-cooler.json?_size=max';
+    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4/cpu_cooler.json?_size=max&_shape=array';
     // query the API
     var response = HTTP.get(apiUrl).data;
     return response;
   }
 });
-*/
-/*
+
 
 Meteor.methods({
   
-  'fan': function () {
+  'case': function () {
       console.log('Fan ran');
     // Construct the URL
 
 //get this to get every separate url
-    var apiUrl = 'http://localhost:8001/pcbuildapp-1170c5b/fan.json?_size=max';
+    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4/case.json?_size=max&_shape=array';
     // query the API
     var response = HTTP.get(apiUrl).data;
     return response;
@@ -81,7 +79,7 @@ Meteor.methods({
     // Construct the URL
 
 //get this to get every separate url
-    var apiUrl = 'http://localhost:8001/pcbuildapp-1170c5b/gpu.json?_size=max';
+    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4/gpu.json?_size=max&_shape=array';
     // query the API
     var response = HTTP.get(apiUrl).data;
     return response;
@@ -95,7 +93,7 @@ Meteor.methods({
     // Construct the URL
 
 //get this to get every separate url
-    var apiUrl = 'http://localhost:8001/pcbuildapp-1170c5b/memory.json?_size=max';
+    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4/memory.json?_size=max&_shape=array';
     // query the API
     var response = HTTP.get(apiUrl).data;
     return response;
@@ -109,7 +107,7 @@ Meteor.methods({
     // Construct the URL
 
 //get this to get every separate url
-    var apiUrl = 'http://localhost:8001/pcbuildapp-1170c5b/motherboard.json?_size=max';
+    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4/motherboard.json?_size=max&_shape=array';
     // query the API
     var response = HTTP.get(apiUrl).data;
     return response;
@@ -123,7 +121,7 @@ Meteor.methods({
     // Construct the URL
 
 //get this to get every separate url
-    var apiUrl = 'http://localhost:8001/pcbuildapp-1170c5b/psu.json?_size=max';
+    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4/psu.json?_size=max&_shape=array';
     // query the API
     var response = HTTP.get(apiUrl).data;
     return response;
@@ -137,7 +135,7 @@ Meteor.methods({
     // Construct the URL
 
 //get this to get every separate url
-    var apiUrl = 'http://localhost:8001/pcbuildapp-1170c5b/storage.json?_size=max';
+    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4/storage.json?_size=max&_shape=array';
     // query the API
     var response = HTTP.get(apiUrl).data;
     return response;
@@ -151,7 +149,7 @@ Meteor.methods({
     // Construct the URL
 
 //get this to get every separate url
-    var apiUrl = 'http://localhost:8001/pcbuildapp-1170c5b/wired.json?_size=max';
+    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4/wired_network.json?_size=max&_shape=array';
     // query the API
     var response = HTTP.get(apiUrl).data;
     return response;
@@ -165,10 +163,10 @@ Meteor.methods({
     // Construct the URL
 
 //get this to get every separate url
-    var apiUrl = 'http://localhost:8001/pcbuildapp-1170c5b/wireless.json?_size=max';
+    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4/wireless_network.json?_size=max&_shape=array';
     // query the API
     var response = HTTP.get(apiUrl).data;
     return response;
   }
 });
-*/
+

@@ -1,3 +1,21 @@
+<template name="home">
+<div id="vue-demo">
+
+My name is [[name]]
+
+<ul>
+    <li v-for="number in arrayOfNumbers">
+        Number: [[number]]
+    </li>
+</ul>
+
+<ul>
+    <li v-for="post in posts">
+        [[post.tiltle]], [[post.content]]
+    </li>
+</ul>
+</div>
+</template>
 <template name="homesida">
 
 <div class="index">

@@ -37,3 +37,7 @@ simple:reactive-method
 meteortoys:allthings
 cfs:standard-packages
 cfs:filesystem
+vue:vue
+akryum:vue-component
+akryum:vue
+dburles:mongo-collection-instances
