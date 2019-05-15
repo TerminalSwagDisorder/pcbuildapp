@@ -1,9 +1,58 @@
+.header {
+border-bottom: 5px;
+border-color: white;
+}
+.navbar {
+background-color: #333;
+color:#fff;
+}
+
+
+
+.block {
+border-left: solid;
+border-right: solid;
+border-width: 1px;
+border-color: #dae6e8;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 4px #4195fc;
+       -moz-box-shadow: 0px 0px 4px #4195fc;
+            box-shadow: 0px 0px 4px #4195fc;
+}
+.navbar-brand {
+border-left: solid;
+border-right: solid;
+border-width: 1px;
+border-color: #dae6e8;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 4px #4195fc;
+       -moz-box-shadow: 0px 0px 4px #4195fc;
+            box-shadow: 0px 0px 4px #4195fc;
+}
+.navbar-inverse {
+    border-width: none;
+}
+
+
+body {
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/images/ny1.jpg");
+    background-color: white;
+
+}
+
+
 .rubrik {
- text-shadow: 2px 2px #4dd0e1;
+ text-shadow: 2px 2px #81a1a5;
     text-align: center;
     font-size: 36px;
     font-family: sans-serif;
-    text-shadow: 0 0 3px #4dd0e1;
 }
 
 .underrubrik {
@@ -13,53 +62,11 @@
     font-family: sans-serif;
 }
 
-.navbar-brand {
-border-left: solid;
-border-right: solid;
-border-width: 1px;
-border-color: #4dd0e1;
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-
-
-
-    -webkit-box-shadow: 0px 0px 4px #4195fc;
-       -moz-box-shadow: 0px 0px 4px #4195fc;
-            box-shadow: 0px 0px 4px #4195fc;
-}
-
-
-.navbar {
-
-background-color: #333;
-color:#fff;
-
-}
-
-
-
-.block {
-border-left: solid;
-border-right: solid;
-border-width: 1px;
-border-color: #4dd0e1;
-
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-
-
-
-    -webkit-box-shadow: 0px 0px 4px #4195fc;
-       -moz-box-shadow: 0px 0px 4px #4195fc;
-            box-shadow: 0px 0px 4px #4195fc;
-}
-
 
 .img-responsive {
 	align-content: center;
 }
+
 .infotext {
 padding-left: 20px;
 text-align: left;
@@ -73,26 +80,26 @@ margin-left: 20px;
 .chkbogame {
     position: relative;
     top: 0px;
-    right: 7px;
+    right: 30px;
     bottom: 0px;
     color: gray;
 }
 .chkbo1surf {
     position: relative;
     top: 0px;
-    right: 8px;
+    right: 31px;
     color: gray;
 }
 .chkbo2office {
     position: relative;
     top: 0px;
-    right: 14px;
+    right: 37px;
     color: gray;
 }
 .chkbo3server {
     position: relative;
     top: 0px;
-    right:10px;
+    right:33px;
     color: gray;
 }
 
@@ -104,55 +111,44 @@ margin-left: 20px;
 .chkbo4low {
     position: relative;
     top: 0px;
-    right: 4px;
+    right: 28px;
     color: gray;
 }
 .chkbo5mid {
     position: relative;
     top: 0px;
-    right: 6px;
+    right: 29px;
     color: gray;
 }
 .chkbo6high {
     position: relative;
     top: 0px;
-    right: 1px;
+    right: 25px;
     color: gray;
 }
 
-/*
-
-.vl {
-    border-left: 6px solid black;
-    height: 500px;
-    position: absolute;
-    left:120px;
-    margin-left: -3px;
-    
-}
-*/
 
 
 
 .chkboxgame {
     position: relative;
     top: 0px;
-    right: 2px;
+    right: 25px;
 }
 .chkbox1surf {
     position: relative;
     top: 0px;
-    right: 3px;
+    right: 26px;
 }
 .chkbox2office {
     position: relative;
     top: 0px;
-    right: 9px;
+    right: 32px;
 }
 .chkbox3server {
     position: relative;
     top: 0px;
-    right:5px;
+    right:28px;
 }
 
 
@@ -162,27 +158,23 @@ margin-left: 20px;
 .chkbox4low {
     position: relative;
     top: 0px;
-    left: 2px;
+    left: -21px;
 }
 .chkbox5mid {
     position: relative;
     top: 0px;
-    left: 0px;
+    left: -23px;
 }
 .chkbox6high {
     position: relative;
     top: 0px;
-    left: 4px;
+    left: -19px;
 }
 
 
 
 
 
-.navbar-inverse {
-
-    border-width: none;
-}
 
 .formen {
 
@@ -190,29 +182,13 @@ text-align:center;
 
 }
 
-.knapp2 {
 
-    padding-bottom:50px;
-    margin-bottom:0px;
-
-}
 /*
-.knapp {
-
-    padding-top: 50px;
-    padding-right: 10px;
-    padding-bottom:50px;
-    padding-left: 10px;
-
-}
-
-*/
-
 .boxa {
     align-content: center;
     text-align: center;
     border-style: solid;
-    border-width: 5px;
+    border-width: 20px;
     border-color: red;
 }
 
@@ -226,24 +202,15 @@ text-align:center;
     left: 100%;
     margin-top: -1px;
 }
+*/
 
 
 
 
 
-body {
-    
-    min-height: 100%;
-
-    /*background-size:cover;*/
-    background-repeat: no-repeat;
-    background-image: url("/images/r.jpeg");
-    background-color: white;
-}
 
 
-
-
+/*Home page first content*/
 .con1{
 
 margin-top: 50px;
@@ -251,11 +218,11 @@ text-align: center;
 width: auto;
 padding-left: 100px;
 padding-right: 100px;
-background-color: rgba(230, 249, 255, 0.3);
-opacity:0.7;
+background-color: rgba(218, 230, 232, 0.3);
+
 
 }
-
+/*Home page second content*/
 .con2{
 
 
@@ -265,12 +232,18 @@ text-align: center;
 width: 100%;
 padding-left: 200px;
 padding-right: 200px;
-background-color: rgba(230, 249, 255, 0.3);
+background-color: rgba(218, 230, 232, 0.3);
 
 
 
 }
 
+/*Content med bilder på Home page*/
+.bilder{
+margin-left: 150px;
+margin-right: 150px;
+
+}
 
 .container {
 
@@ -279,12 +252,21 @@ right: 0px;
 left: 200px;
 }
 
-
+/*Build guides lägg till guide form*/
 .formi {
-padding-top: 100px;
-padding-left: 700px;
-padding-right: 700px;
-padding-bottom: 400px;
+padding-bottom: 55px;
+margin-top: 50px;
+text-align: center;
+width: auto;
+margin-left:600px;
+margin-right:600px;
+margin-bottom:20px;
+padding-left: 10px;
+padding-right: 10px;
+background-color: rgba(218, 230, 232, 0.5);
+border-style:solid;
+border-width:1px;
+border-color: gray;
 }
 
 
@@ -295,16 +277,16 @@ padding-bottom: 400px;
 }
 
 
- /* The sidebar menu */
+ /*Sidebar menu i completed*/
 .sidenav {
-    height: 876px ; /* Full-height: remove this if you want "auto" height */
-    width: 300px; /* Set the width of the sidebar */
+    height: 876px ;
+    width: 300px; 
 position: relative;
 margin-top: -21px;
     background-color:#333;
 }
 
-/* The navigation menu links */
+/* Navigation menu links */
 .sidenav a {
     
     text-decoration: none;
@@ -313,7 +295,7 @@ margin-top: -21px;
     display: block;
 }
 
-/* When you mouse over the navigation links, change their color */
+
 .sidenav a:hover {
     color: #f1f1f1;
 }
@@ -327,10 +309,13 @@ color: white;
 
 .strek {
 
-color: white;
+color: whi
+Copyright © Benjamin Pc Partpicker 2018
+te;
 
 }
 
+/*
 .test {
 
 border-top: solid;
@@ -345,76 +330,21 @@ border-color: #4dd0e1;
             box-shadow: 0px 0px 4px #4195fc;
 }
 
-#price-max {
-color: white;
-}
+*/
 
-.slidecontainer {
-    width: 100%; /* Width of the outside container */
-}
 
-/* The slider itself */
-.slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 100%; /* Full-width */
-    height: 25px; /* Specified height */
-    background: #d3d3d3; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-
-}
-
-/* Mouse-over effects */
-.slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
-}
-
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #4CAF50; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-}
-
-.slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #4CAF50; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-}
-
-.prisslide {
-padding-left:700px;
-padding-right:700px;
-
-}
+/*Search på completed*/
 
 .sok {
+border-top:solid;
+border-size:0.5px;
+border-color:gray;
 padding-top:20px;
 padding-left:15px;
 padding-right:15px;
 }
 
 
-.prisslide2 {
-padding-left:15px;
-padding-right:15px;
-}
-
-.container.marketing {
-
-    position: relative;
-    left: 40px;
-    margin-top: 100px;
-
-
-}
 
 .btn .btn-secondary {
 
@@ -422,53 +352,42 @@ color: red;
 
 }
 
-.bilder{
-margin-left: 150px;
-margin-right: 150px;
-}
+
+
+
 
 
 
 .container.marketing {
 
+    position: relative;
+
 
 padding-top:20px;
 
 padding-bottom:20px;
+left: 0px;
 
-opacity:0.7;
-background-color: rgba(230, 249, 255, 0.3);
+
+background-color: rgba(218, 230, 232, 0.3);
 width:auto;
 }
 
 
 
 
-
-
+/*
 .img {
   height: 100%;
   min-height: 350px;
   background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+
   background-size: cover;
+background-color: rgba(230, 249, 255, 0.5);
 }
+*/
 
 
-.header {
-
-border-bottom: 5px;
-border-color: white;
-
-}
-.container.marketing{
-
-left: 0px;
-margin-top: opx;
-
-}
 
 button {
 
@@ -476,6 +395,8 @@ background-color: none;
 border: none;
 
 }
+
+/*knappa på homepage*/
 .but1 {
   background-color: gray; /* Green */
   border: none;
@@ -493,11 +414,16 @@ border: none;
 .but1 {
   background-color: lightgray; 
   color: black; 
-  border-color: #4dd0e1;
+  border: solid;
+  border-color: #dae6e8;
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
             border-radius: 4px;
 
+
+    -webkit-box-shadow: 0px 0px 4px #dae6e8;
+       -moz-box-shadow: 0px 0px 4px #dae6e8;
+            box-shadow: 0px 0px 4px #dae6e8;
 
 }
 
@@ -506,8 +432,123 @@ border: none;
   color: white;
 }
 
+/*knapp på guides*/
+.but2 {
+  background-color: gray; /* Green */
+  border: none;
+  color: white;
+  padding:10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.but2 {
+  background-color: lightgray; 
+  color: black; 
+border: solid;
+border-color: #dae6e8;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
 
 
+    -webkit-box-shadow: 0px 0px 4px #dae6e8;
+       -moz-box-shadow: 0px 0px 4px #dae6e8;
+            box-shadow: 0px 0px 4px #dae6e8;
+
+}
+
+.but2:hover {
+  background-color: gray;
+  color: white;
+}
+
+/*knapp på completed sida*/
+.but3 {
+font-size-adjust: 0.35;
+  border: none;
+  color: white;
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.but3 {
+  background-color: lightgray; 
+  color: black; 
+
+  border: solid;
+  border-color: #dae6e8;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
 
 
+    -webkit-box-shadow: 0px 0px 4px #dae6e8;
+       -moz-box-shadow: 0px 0px 4px #dae6e8;
+            box-shadow: 0px 0px 4px #dae6e8;
 
+}
+
+.but3:hover {
+  background-color: gray;
+  color: white;
+
+}
+
+/*Set your requirements formen*/
+
+#app1 {
+padding:17px;
+margin-top: 50px;
+text-align: center;
+width: auto;
+margin-left:600px;
+margin-right:600px;
+margin-bottom:20px;
+padding-left: 10px;
+padding-right: 10px;
+background-color: rgba(218, 230, 232, 0.9);
+border: solid;
+border-color: gray;
+}
+
+.guides {
+position:relative;
+margin-left:525px;
+margin-right:600px;
+margin-top:50px;
+margin-bottom:70px;
+background-color:#dae6e8;
+border: 1px solid gray;
+width:850px;
+height:300px;
+background-color: rgba(218, 230, 232, 0.9);
+}
+.insertedguide {
+
+position:relative;
+left:540px;
+bottom:350px;
+font-family:serif;
+font-size: 27px;
+}
+
+.pic {
+background-image: url("/images/atx.png");
+    height: 220px;
+    width: 220px;
+    background-size: cover;
+position:relative;
+margin-left:580px;
+margin-right:10px;
+margin-top:35px;
+}
