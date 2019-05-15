@@ -5,7 +5,7 @@ Meteor.methods({
     // Construct the URL
 
 //get this to get every separate url
-    var apiUrl = 'http://localhost:8001/pcbuildapp-1170c5b.json?_size=max';
+    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4.json?_size=max';
     // query the API
     var response = HTTP.get(apiUrl).data;
     return response;
