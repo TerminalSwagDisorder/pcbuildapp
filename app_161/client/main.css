@@ -309,9 +309,8 @@ color: white;
 
 .strek {
 
-color: whi
-Copyright © Benjamin Pc Partpicker 2018
-te;
+color: white
+
 
 }
 
@@ -337,8 +336,8 @@ border-color: #4dd0e1;
 
 .sok {
 border-top:solid;
-border-size:0.5px;
-border-color:gray;
+border-width:0.1px;
+border-color:#595959;
 padding-top:20px;
 padding-left:15px;
 padding-right:15px;
@@ -396,9 +395,9 @@ border: none;
 
 }
 
-/*knappa på homepage*/
+/* knappa på homepage
 .but1 {
-  background-color: gray; /* Green */
+  background-color: gray;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -407,7 +406,7 @@ border: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -432,6 +431,7 @@ border: none;
   color: white;
 }
 
+*/
 /*knapp på guides*/
 .but2 {
   background-color: gray; /* Green */
@@ -520,7 +520,7 @@ background-color: rgba(218, 230, 232, 0.9);
 border: solid;
 border-color: gray;
 }
-
+/* content på guides */
 .guides {
 position:relative;
 margin-left:525px;
@@ -542,6 +542,25 @@ font-family:serif;
 font-size: 27px;
 }
 
+
+.insertedguidetext {
+
+position:relative;
+left:542px;
+bottom:330px;
+font-family:serif;
+font-size: 17px;
+max-width:500px;
+}
+.posted  {
+
+position:relative;
+left:540px;
+bottom:244px;
+font-family:sans-serif;
+font-size: 15px;
+}
+
 .pic {
 background-image: url("/images/atx.png");
     height: 220px;
@@ -551,4 +570,134 @@ position:relative;
 margin-left:580px;
 margin-right:10px;
 margin-top:35px;
+border-style:solid;
+border-width: 0.5px;
+border-color:gray;
 }
+
+/*slut content på guides*/
+
+/*content på completed*/
+
+.completedbuilds {
+position:relative;
+margin-left:425px;
+margin-right:600px;
+margin-top:10px;
+padding-top:40px;
+
+bottom:800px;
+background-color:#dae6e8;
+border: 1px solid gray;
+width:1000px;
+height:750px;
+background-color: rgba(218, 230, 232, 0.9);
+}
+
+
+.comptitle1 {
+
+position:relative;
+left:530px;
+bottom:1535px;
+font-family:serif;
+font-size: 27px;
+
+}
+
+
+.specs1 {
+
+position:relative;
+left:682px;
+bottom:1530px;
+font-family:serif;
+font-size: 17px;
+max-width:500px;
+}
+
+.pic2 {
+background-image: url("https://www.bhphotovideo.com/images/images1000x1000/deepcool_tesseract_sw_tesseract_mid_tower_case_black_1251372.jpg");
+    height: 220px;
+    width: 220px;
+    background-size: cover;
+position:relative;
+margin-left:30px;
+margin-right:10px;
+margin-top:35px;
+border-style:solid;
+border-width: 0.5px;
+border-color:gray;
+}
+.mm {
+padding-bottom:20px;
+}
+
+
+
+
+.comptitle2 {
+
+position:relative;
+left:510px;
+bottom:1700px;
+font-family:serif;
+font-size: 27px;
+
+}
+
+
+.specs2 {
+
+position:relative;
+left:682px;
+bottom:1690px;
+font-family:serif;
+font-size: 17px;
+max-width:500px;
+}
+
+.pic3{
+background-image: url("https://cdn.shopify.com/s/files/1/0092/7704/6884/products/product-image-803530691_530x@2x.jpg?v=15489404402");
+
+    height: 220px;
+    width: 220px;
+    background-size: cover;
+position:relative;
+left:426px;
+bottom:1420px;
+margin-left:30px;
+margin-right:10px;
+margin-top:35px;
+border-style:solid;
+border-width: 0.5px;
+border-color:gray;
+}
+
+.ss{
+position:relative;
+top:-1470px;
+border-style:solid;
+border-top: 30px;
+border-color:#c7d9da;
+margin-left:426px;
+margin-right:484px;
+}
+
+.readmore1  {
+
+position:relative;
+left:456px;
+bottom:1535px;
+font-family:sans-serif;
+font-size: 15px;
+}
+.readmore2  {
+
+position:relative;
+left:456px;
+bottom:1695px;
+font-family:sans-serif;
+font-size: 15px;
+}
+
