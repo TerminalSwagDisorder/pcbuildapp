@@ -6,13 +6,7 @@ FlowRouter.route('/', {
   }
 });
 
-FlowRouter.route('/test', {
-  name: 'test',
-  action() {
-    GAnalytics.pageview();
-    BlazeLayout.render('MainLayout', {main: 'home'});
-  }
-});
+
 
 FlowRouter.route('/build', {
   name: 'build',
