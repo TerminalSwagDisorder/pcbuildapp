@@ -45,3 +45,10 @@ FlowRouter.route('/yourcomp', {
   }
 });
 
+FlowRouter.route('/PickParts', {
+  name: 'parts',
+  action() {
+    GAnalytics.pageview();
+    BlazeLayout.render('MainLayout', {main: 'PickParts'});
+  }
+});
