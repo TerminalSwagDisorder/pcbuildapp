@@ -617,7 +617,7 @@ max-width:500px;
 }
 
 .pic2 {
-background-image: url("https://www.bhphotovideo.com/images/images1000x1000/deepcool_tesseract_sw_tesseract_mid_tower_case_black_1251372.jpg");
+background-image: url("images/pc1.jpg");
     height: 220px;
     width: 220px;
     background-size: cover;
@@ -658,7 +658,7 @@ max-width:500px;
 }
 
 .pic3{
-background-image: url("https://cdn.shopify.com/s/files/1/0092/7704/6884/products/product-image-803530691_530x@2x.jpg?v=15489404402");
+background-image: url("images/pc2.jpg");
 
     height: 220px;
     width: 220px;
@@ -684,11 +684,11 @@ margin-left:426px;
 margin-right:484px;
 }
 
-.readmore1  {
+#readmore1  {
 
 position:relative;
 left:456px;
-bottom:1535px;
+bottom:1530px;
 font-family:sans-serif;
 font-size: 15px;
 }
@@ -700,4 +700,43 @@ bottom:1695px;
 font-family:sans-serif;
 font-size: 15px;
 }
+
+
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
 
