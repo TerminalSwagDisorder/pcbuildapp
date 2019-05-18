@@ -7,3 +7,4 @@ import { HTTP } from 'meteor/http'
 
 import Handsontable from "handsontable";
 import 'handsontable/dist/handsontable.full.css';
+
