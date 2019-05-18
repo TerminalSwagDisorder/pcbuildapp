@@ -128,7 +128,7 @@ margin-left: 20px;
 }
 
 
-
+/*
 
 .chkboxgame {
     position: relative;
@@ -150,7 +150,7 @@ margin-left: 20px;
     top: 0px;
     right:28px;
 }
-
+*/
 
 
 
@@ -188,7 +188,11 @@ text-align:center;
     align-content: center;
     text-align: center;
     border-style: solid;
-    border-width: 20px;
+    border-width: 20px;    position: relative;
+    top: 0px;
+    right: 30px;
+    bottom: 0px;
+    color: gray;
     border-color: red;
 }
 
@@ -434,38 +438,22 @@ border: none;
 */
 /*knapp på guides*/
 .but2 {
-  background-color: gray; /* Green */
+
+width: calc(100% / 4);
+color: black;
   border: none;
-  color: white;
-  padding:10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  margin: 14px 12px;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
   cursor: pointer;
 }
-.but2 {
-  background-color: lightgray; 
-  color: black; 
-border: solid;
-border-color: #dae6e8;
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-
-
-    -webkit-box-shadow: 0px 0px 4px #dae6e8;
-       -moz-box-shadow: 0px 0px 4px #dae6e8;
-            box-shadow: 0px 0px 4px #dae6e8;
-
-}
-
 .but2:hover {
-  background-color: gray;
-  color: white;
+background: none;
+color: black;
 }
 
 /*knapp på completed sida*/
@@ -751,4 +739,33 @@ height:790px;
 background-color: rgba(218, 230, 232, 0.9);
 }
 
+#memchk {
+text-align: left;
+    float: left;
+    margin: 15px;
+} 
+#cpuchk {
+text-align: left;
+    float: left;
+    margin: 15px;
+} 
+#gpuchk {
+text-align: left;
+    float: left;
+    margin: 15px;
+} 
+#netchk {
+text-align: left;
+    float: left;
+    margin: 15px;
+} 
+#cont {
+border-top: solid 1px black;
+}
+#typecont {
+	width: calc(100% / 4);
+    padding: 10px;
+    text-align: left;
+    margin: 0 auto;
+}
 

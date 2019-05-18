@@ -5,85 +5,109 @@
 
 <div id="app1">
 
-<form action="/PickParts">
+<form>
 
 <h1>Set your requirements</h1>
 <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
-
+<p>_________________________________________________________________________________</p>
 <section>
-    <fieldset>
-<br>
-<div id="cont">
-      <h3>Please set your price<strong><abbr title="required">*</abbr></strong></h3>
-Budget:<br>
-  <input onClick="this.setSelectionRange(0, this.value.length); this.select();" type="text" name="Price" value="1000"> €<br>
- </div>
 
-<br>
-<div id="cont">
+    <fieldset>
+      <h3>Please set your price<strong><abbr title="required">*</abbr></strong></h3>
+ <form>
+Budget:<br>
+  <input type="text" name="Price"> €<br>
+ 
+<p>_________________________________________________________________________________</p>
+
 
     <h3>Computer type</h3>
 
 
-<div id="typecont">
-      <ul style="list-style-type:none" id="typeul">
+
+      <ul style="list-style-type:none">
           <li>
             <label for="title_1">
-<div class="typechk">
-              <input type="radio" id="title_1" name="type" value="none" checked>
-              Any
-</div>
-            </label>
-          </li>
-          <li>
-            <label for="title_2">
-<div class="typechk">
+<div class="chkboxgame">
               <input type="radio" id="title_1" name="type" value="Gaming" >
               Gaming
 </div>
             </label>
           </li>
           <li>
-            <label for="title_3">
-<div class="typechk">
+            <label for="title_2">
+<div class="chkbox1surf">
               <input type="radio" id="title_2" name="type" value="Surfing">
               Surfing
 </div>
             </label>
           </li>
 <li>
-            <label for="title_4">
-<div class="typechk">
+            <label for="title_3">
+<div class="chkbox2office">
               <input type="radio" id="title_3" name="type" value="Office">
               Office
 </div>
             </label>
           </li>
 <li>
-            <label for="title_5">
-<div class="chkboxgame">
+            <label for="title_4">
+<div class="chkbox3server">
               <input type="radio" id="title_4" name="type" value="Server">
               Server
 </div>
             </label>
           </li>
       </ul>
-</div>
-</div>
-<br>
 
-<div id="cont">
+
+<!--
+<p>_________________________________________________________________________________</p>
+
+      <h3>Preformance</h3>
+
+
+
+
+      <ul style="list-style-type:none">
+          <li>
+            <label for="title_5">
+<div class="chkbox4low">
+              <input type="checkbox" id="title_5" name="title" value="M." >
+              Low end
+</div>
+            </label>
+          </li>
+   <li>
+            <label for="title_6">
+<div class="chkbox5mid">
+              <input type="checkbox" id="title_6" name="title" value="M." >
+              Mid end
+</div>
+            </label>
+          </li>
+   <li>
+            <label for="title_7">
+<div class="chkbox6high">
+              <input type="checkbox" id="title_7" name="title" value="M." >
+              High end
+</div>
+            </label>
+          </li>
+</ul>
+-->
+
+<p>_________________________________________________________________________________</p>
+
+
       <h3>Set preferences (Optional)</h3>
 
 <div id="memchk">
       <ul style="list-style-type:none">
 <li>
-<h4>Memory</h4>
-</li>
-<li>
             <label for="title_1">
 <div class="memchk">
-              <input type="radio" class="prefgroup1"  id="pref0" name="ram" value="none" checked>
+              <input type="radio" class="prefgroup1"  id="pref0" name="ram" value="" checked>
               None
 </div>
             </label>
@@ -126,12 +150,9 @@ Budget:<br>
 <div id="cpuchk">
       <ul style="list-style-type:none">
 <li>
-<h4>CPU</h4>
-</li>
-<li>
             <label for="title_1">
 <div class="cpuchk">
-              <input type="radio" class="prefgroup2"  id="pref0-2" name="cpu" value="none" checked>
+              <input type="radio" class="prefgroup2"  id="pref0-2" name="cpu" value="" checked>
               None
 </div>
             </label>
@@ -151,18 +172,16 @@ Budget:<br>
               Intel
 </div>
             </label>
-
+          </li>
+<li>
           </li>
       </ul>
 </div><div id="gpuchk">
       <ul style="list-style-type:none">
 <li>
-<h4>GPU</h4>
-</li>
-<li>
             <label for="title_1">
 <div class="gpuchk">
-              <input type="radio" class="prefgroup3"  id="pref0-3" name="gpu" value="none" checked>
+              <input type="radio" class="prefgroup3"  id="pref0-3" name="gpu" value="" checked>
               None
 </div>
             </label>
@@ -190,71 +209,146 @@ Budget:<br>
 <div id="netchk">
       <ul style="list-style-type:none">
 <li>
-<h4>Network</h4>
-</li>
+            <label for="title_1">
 <div class="netchk">
-<li>
-            
-              <input type="radio" class="prefgroup4"  id="pref0-4" name="network" value="none" checked>
-              <label for="title_1">None</label>
-               </li>
+              <input type="radio" class="prefgroup4"  id="pref0-4" name="network" value="" checked>
+              None
 </div>
-          <div class="netchk">
-<li>
-           
+            </label>
+          </li>
+          <li>
+            <label for="title_2">
+<div class="netchk">
               <input type="radio" class="prefgroup4" id="pref1-4" name="network" value="USB" >
- <label for="title_2">USB Wireless</label>
-               </li>
+              USB Wireless
 </div>
-         <div class="netchk">
-<li>
-
+            </label>
+          </li>
+          <li>
+            <label for="title_3">
+<div class="netchk">
               <input type="radio" class="prefgroup4"  id="pref2-4" name="network" value="PCIe">
-                          <label for="title_3">PCIe Wireless</label>
-               </li>
+              PCIe Wireless
 </div>
-<div class="netchk">
+            </label>
+          </li>
 <li>
-
+            <label for="title_4">
+<div class="netchk">
               <input type="radio" class="prefgroup4"  id="pref3-4" name="network" value="100 Mbit/s">
-            <label for="title_4">100 Mbit/s</label>
-               </li>
+              100 Mbit/s
 </div>
-<div class="netchk">
+            </label>
+          </li>
 <li>
+            <label for="title_5">
+<div class="netchk">
               <input type="radio" class="prefgroup4"  id="pref4-4" name="network" value="1000 Mbit/s">
-            <label for="title_5">PCIe 1000 Mbit/s</label>
-          </li>
+              PCIe 1000 Mbit/s
 </div>
-<div class="netchk">
+            </label>
+          </li>
 <li>
+            <label for="title_6">
+<div class="netchk">
               <input type="radio" class="prefgroup4"  id="pref5-4" name="network" value="USB 1000 Mbit/s">
-            <label for="title_6"> USB 1000 Mbit/s</label>
-          </li>
-</div> 
+              USB 1000 Mbit/s
+</div>
+            </label>
+          </li><li>
+            <label for="title_7">
 <div class="netchk">
-<li>
               <input type="radio" class="prefgroup4"  id="pref6-4" name="network" value="10 Gbit/s">
-                          <label for="title_7">10 Gbit/s</label>
+              10 Gbit/s
+</div>
+            </label>
           </li>
-</div> 
       </ul>
 </div>
-</div>
-
 <div class="but2">
-  <input type="submit" value="Build My PC">
+  <input type="submit" value="Submit">
 </div>
+</form>
+<!--
+<select>
+  <option value="null">Select RAM</option>
+  <option value="4GB">4GB</option>
+  <option value="8GB">8GB</option>
+  <option value="16GB">16GB</option>
+  <option value="32GB">32GB</option>
+</select>
 
 
-    </fieldset>   
+
+<select>
+  <option value="null">Select CPU</option>
+  <option value="AMD">AMD</option>
+  <option value="Intel">Intel</option>
+</select>
+
+
+
+<select>
+  <option value="null">Select GPU</option>
+  <option value="Radeon">AMD</option>
+  <option value="Geforce">NVIDIA</option>
+</select>
+
+
+
+
+
+
+
+
+
+
+<select>
+ 
+  <li class="dropdown">
+    <option value="null"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Select Network<span class="caret"></span></a></option>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-2" href="#">Wireless</a></li>
+
+
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Wired <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+        <option>  <li><a tabindex="-1" href="#" value="100 Mbit/s">100 Mbits/s</a></li> </option>
+        <option>  <li><a tabindex="-1" href="#" value="1000 Mbit/s">1000 Mbits/s</a></li> </option>
+        <option> <li><a tabindex="-1" href="#" value="10 Gbit/s">10 Gbits/s</a></li> </option>
+
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+</select>
+-->
+
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+
+
+    </fieldset>
+    
+    
 </section>
 
-
-
-
-
 </form>
+<br>
+<br>
+     <!-- <div class="but2"> <a href="/PickParts">Build my PC </a> </div> -->
+{{orderList}}
 
 </div>
 </div>
