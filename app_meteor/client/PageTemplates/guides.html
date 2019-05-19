@@ -2,36 +2,35 @@
 
 
 
-<form>
+<form id="guideform">
 
 <div class="formi">
 <h1 align="center">Insert your guides</h1>
   <div class="form-group">
     <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Guide type</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>Computers</option>
-      <option>CPUs</option>
-      <option>RAM</option>
-      <option>OS</option>
-      <option>Motherboards</option>
-      <option>Other</option>
-    </select>
+<div id="guidechk">
+<ul style="list-style-type:none">
+  <li><input type="radio" name="guide" value="Computers" checked> <label for="title_3">Computers</label></li>
+  <li><input type="radio" name="guide" value="CPUs"> <label for="title_3">CPUs</label></li>
+  <li><input type="radio" name="guide" value="Memory"> <label for="title_3">Memory</label></li>
+  <li><input type="radio" name="guide" value="OS"> <label for="title_3">OS</label></li>
+  <li><input type="radio" name="guide" value="Motherboards"> <label for="title_3">Motherboards</label></li>
+  <li><input type="radio" name="guide" value="Other"> <label for="title_3">Other</label></li>
+</ul>
   </div>
-
+  </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Description</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea name="guide" form="guideform" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
 <br>
-  <ul class="nav navbar-nav">
 
-       <div class="but2"> <a onclick="alert('E-mail: benben@hotmail.com           Phone: 02049821')">Submit </a> </div>
-
-    </ul>
-
+      <div class="but2">
+         <input type="submit" value="Build My PC">
+ </div>
 
   </div>
 </div>
@@ -41,11 +40,9 @@
 
 <div class="guides">
 
-<div class="pic">
 
-</div>
-</div>
 <h2 class="insertedguide">Building mini-ATX computer</h2>
-<p class ="insertedguidetext"> First of all, This is not a professional tutorial, but something I just came up with while building it myself. Secondly you will need to have some prior basic knowledge about computers before proceeding.</p>
+<p class ="insertedguidetext"> First of all, This is not a professional tutorial, but something I just came up with while building it myself. Secondly you will need to have some prior basic knowledge about computers before proceeding.</p><img src="/images/atx.png" alt=" " height="220" width="220" class="pic"> 
 <p class="posted">Posted by Admin at [15.5.2019]</p>
+</div>
 </template>

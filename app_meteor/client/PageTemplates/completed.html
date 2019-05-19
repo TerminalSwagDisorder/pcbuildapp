@@ -1,27 +1,25 @@
 <template name="completed">
 
 
-<div id="mySidenav" class="sidenav">
+
 
 
 <div class="formen">
 
 <div id="app">
+<div id="mySidenav" class="sidenav">
+<form class="sidebar">
 
-<form>
 
-
-<div class="sok">
- <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+<div class="but2">
+ <input class="form-control" type="text" placeholder="Name" aria-label="Search">
 </div>
 
-<section>
 
-    <fieldset>
       <h3 class="h3comp">Please set your price</h3>
 <br>
-<p style="color:gray;">Budget:<br>
- <input type="text" name="Price" style="width:180px;"> €</p>
+<p style="color:white;">Budget:<br>
+ <input type="number" name="Price" style="width:180px;"> €</p>
 
 
 
@@ -29,152 +27,187 @@
 <hr>
 
 
-    <h3 class="strek">Computer type</h3>
 
-
-
-      <ul style="list-style-type:none">
-          <li>
-            <label for="title_1">
-<div class="chkbogame">
-              <input type="checkbox" id="title_1" name="title" value="M." >
-              Gaming
-</div>
-            </label>
-          </li>
-          <li>
-            <label for="title_2">
-<div class="chkbo1surf">
-              <input type="checkbox" id="title_2" name="title" value="Ms.">
-              Surfing
-</div>
-            </label>
-          </li>
-<li>
-            <label for="title_3">
-<div class="chkbo2office">
-              <input type="checkbox" id="title_3" name="title" value="Ms.">
-              Office
-</div>
-            </label>
-          </li>
-<li>
-            <label for="title_4">
-<div class="chkbo3server">
-              <input type="checkbox" id="title_4" name="title" value="Ms.">
-              Server
-</div>
-            </label>
-          </li>
-      </ul>
-
-
-<hr>
-
-
-      <h3 class="strek">Preformance</h3>Computer type
-
-
-
-
-      <ul style="list-style-type:none">
-          <li>
-            <label for="title_5">
-<div class="chkbo4low">
-              <input type="checkbox" id="title_5" name="title" value="M." >
-              Low end
-</div>
-            </label>
-          </li>
-   <li>
-            <label for="title_6">
-<div class="chkbo5mid">
-              <input type="checkbox" id="title_6" name="title" value="M." >
-              Mid end
-</div>
-            </label>
-          </li>
-   <li>
-            <label for="title_7">
-<div class="chkbo6high">
-              <input type="checkbox" id="title_7" name="title" value="M." >
-              High end
-</div>
-            </label>
-          </li>
-</ul>
-
-
-<hr>
-
-
-
-      <h3 class="strek">Set preferences (Optional)</h3>
-
-
-
-
-<select>
-  <option value="null">Select RAM</option>
-  <option value="4GB">4GB</option>
-  <option value="8GB">8GB</option>
-  <option value="16GB">16GB</option>
-  <option value="32GB">32GB</option>
-</select>
-
-
-
-
-<select>
-  <option value="null">Select CPU</option>
-  <option value="AMD">AMD</option>
-  <option value="INTEL">INTEL</option>
-</select>
-<br>
-<br>
-
-
-<select>
-  <option value="null">Select GPU</option>
-  <option value="AMD">AMD</option>
-  <option value="NVIDIA">NVIDIA</option>
-</select>
-
-
-
-
-
-
-
-
-
-
-<select>
- 
-  <li class="dropdown">
-    <option value="null"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Select Network<span class="caret"></span></a></option>
-    <ul class="dropdown-menu">
-      <li><a tabindex="-2" href="#">Wireless</a></li>
-
-
-      <li class="dropdown-submenu">
-        <a class="test" tabindex="-1" href="#">Wired <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-        <option>  <li><a tabindex="-1" href="#">100 Mbits/s</a></li> </option>
-        <option>  <li><a tabindex="-1" href="#">1000 Mbits/s</a></li> </option>
-        <option> <li><a tabindex="-1" href="#">10 Gbits/s</a></li> </option>
-
-        </ul>
-      </li>
-    </ul>
+                         <div class="streck" id="cont2">
+                            <h3 style="color:white;">Computer Type</h3>
+                            <div id="compchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>Memory</h4>
   </li>
+                                    <li>
+                                        <label for="title_2">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1" id="pref1" name="ram" value="4GB" >
+                                                Gaming
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_3">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1"  id="pref2" name="ram" value="8GB">
+                                                Surfing
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_4">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1"  id="pref3" name="ram" value="16GB">
+                                                Office
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_5">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1"  id="pref4" name="ram" value="32GB">
+                                                Server
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
 
-</select>
 
-    </fieldset>
-    
-    
-</section>
+<hr>
+
+
+
+                         <div id="cont2">
+                            <h3 style="color:white;">Set preferences (Optional)</h3>
+                            <div id="compchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>Memory</h4>
+  </li>
+                                    <li>
+                                        <label for="title_2">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1" id="pref1" name="ram" value="4GB" >
+                                                4GB
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_3">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1"  id="pref2" name="ram" value="8GB">
+                                                8GB
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_4">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1"  id="pref3" name="ram" value="16GB">
+                                                16GB
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_5">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1"  id="pref4" name="ram" value="32GB">
+                                                32GB
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="compchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>CPU</h4>
+                                    </li>
+                                    <li>
+                                        <label for="title_2">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup2" id="pref1-2" name="cpu" value="AMD" >
+                                                AMD
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_3">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup2"  id="pref2-2" name="cpu" value="Intel">
+                                                Intel
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="compchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>GPU</h4>
+                                    </li>
+                                    <li>
+                                        <label for="title_2">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup3" id="pref1-3" name="gpu" value="AMD" >
+                                                AMD
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_3">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup3"  id="pref2-3" name="gpu" value="Nvidia">
+                                                Nvidia
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="compchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>Network</h4>
+                                    </li>
+                                    <div class="compchk">
+                                        <li>
+                                            <input type="checkbox" class="prefgroup4" id="pref1-4" name="network" value="USB" >
+                                            <label for="title_2">USB Wireless</label>
+                                        </li>
+                                    </div>
+                                    <div class="compchk">
+                                        <li>
+                                            <input type="checkbox" class="prefgroup4"  id="pref2-4" name="network" value="PCIe">
+                                            <label for="title_3">PCIe Wireless</label>
+                                        </li>
+                                    </div>
+                                    <div class="compchk">
+                                        <li>
+                                            <input type="checkbox" class="prefgroup4"  id="pref3-4" name="network" value="100 Mbit/s">
+                                            <label for="title_4">100 Mbit/s</label>
+                                        </li>
+                                    </div>
+                                    <div class="compchk">
+                                        <li>
+                                            <input type="checkbox" class="prefgroup4"  id="pref4-4" name="network" value="1000 Mbit/s">
+                                            <label for="title_5">PCIe 1000 Mbit/s</label>
+                                        </li>
+                                    </div>
+                                    <div class="compchk">
+                                        <li>
+                                            <input type="checkbox" class="prefgroup4"  id="pref5-4" name="network" value="USB 1000 Mbit/s">
+                                            <label for="title_6"> USB 1000 Mbit/s</label>
+                                        </li>
+                                    </div>
+                                    <div class="compchk">
+                                        <li>
+                                            <input type="checkbox" class="prefgroup4"  id="pref6-4" name="network" value="10 Gbit/s">
+                                            <label for="title_7">10 Gbit/s</label>
+                                        </li>
+                                    </div>
+                                </ul>
+                                </div>
+                                </div>
+</div>
+
 
 </form>
 <hr>
@@ -182,225 +215,39 @@
 
 
 
-<button class="but3"><a onclick="alert('Please wait...')">Search</a></button>
-
-
-
-
-
+                               <div class="but2">
+                                    <input type="submit" value="Search">
+                            </div>
 </div>
-
-</div>
-
-
-
-</div>
+<section id="main">
+<div id="inlineblock">
 <div class="completedbuilds">
 
-<div class="pic2">
-
-</div>
-</div>
-<h2 class="comptitle1"><strong>Jaded</strong></h2>
-<ul class="specs1">
-  <li class ="mm">AMD Ryzen 5 2600, 3.4GHz</li>
-  <li class ="mm">NVIDIA Geforce GTX 1070, 8GB GDDR5</li>
-  <li class ="mm">16GB (2 x 8GB) DDR4 3000MHz</li>
-  <li class ="mm">250GB M.2 NVMe SSD</li>
-  <li class ="mm">650W 80+</li>
+<h2 class="comptitle"><strong>Jaded</strong></h2>
+<ul class="specs">
+  <li class="mm">AMD Ryzen 5 2600, 3.4GHz</li>
+  <li class="mm">NVIDIA Geforce GTX 1070, 8GB GDDR5</li>
+  <li class="mm">16GB (2 x 8GB) DDR4 3000MHz</li>
+  <li class="mm">250GB M.2 NVMe SSD</li>
+  <li class="mm">650W 80+</li>
 </ul>
-
-
-<!--_______________________________________________________-->
-
-
-<button id="readmore1">Read more</button>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <ul class="readmoreinfo" style="list-style-type:none;">
-<br>
-<li><strong>Hinta: 1179€</strong></li>
-<br>
-<li>Tekniset tiedot:</li>
-<br>
-<li>Komponenttilistaus</li>
-<li>Prosessori: AMD Ryzen 5 2600, 3.4GHz</li>
-<li>Emolevy: ASUS AMD B450 -piirisarjaan pohjautuva</li>
-<li>Näytönohjain: ASUS NVIDIA Geforce GTX 1070, 8GB GDDR5</li>
-<li>Keskusmuisti: 16GB (2 x 8GB) DDR4 3000MHz</li>
-<li>Massamuisti: 250GB M.2 NVMe SSD</li>
-<li>Optinen asema: - (HUOM! Kotelossa ei ole paikkaa sisäiselle optiselle asemalle!)</li>
-<li>Prosessorijäähdytys: AMD Wraith Spire</li>
-<li>Kotelo: Fractal Design Define C Ben's Edition</li>
-<li>Virtalähde: 650W 80+</li>
-<li>Käyttöjärjestelmä: Esiasennettu Windows 10 Home 64-bit FI, ENG, SWE</li>
-<br>
-<li>Liitännät:</li>
-<br>
-<li>DVI-D / HDMI x 2 / DisplayPort x 2</li>
-<li>USB 3.1 Gen2 Type-A x 2</li>
-<li>USB 3.1 Gen1 Type-C x 1</li>
-<li>USB 3.1 Gen1 Type-A x 2</li>
-<li>USB 3.0 x 2 (edessä 2)</li>
-<li>USB 2.0 x 2</li>
-<li>PS/2 x 1 (hiiri/näppäimistö kombo)</li>
-<li>RJ45 x 1</li>
-<li>Analogiset 3.5mm ääniliitännät (takana, edessä 3.5 sisään- ja ulostulo), optinen ääniulostulo x 1</li>
-<br>
-<li>Laajennuspaikat:</li>
-<br>
-<li>DDR4 DIMM x 2</li>
-<li>PCI-e 3.0 x16 x 1</li>
-<li>PCI-e 2.0 x1 x 3</li>
-<li>SATA3 x 6</li>
-<li>3.5” x 2</li>
-<li>2.5" x 3</li></ul>
-  </div>
-
-
-
-
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("readmore1");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-} 
-</script>
-
-
-
-<!--///////////////////////////////////////////////////-->
+<img src="/images/pc1.jpg" alt=" " height="220" width="220" class="comppic">
 </div>
-<div class="ss"></div>
 
+<div class="completedbuilds">
 
-
-<div class="pic3">
-
-
-</div>
-<h2 class="comptitle2"><strong>Futurex</strong></h2>
-<ul class="specs2">
-  <li class ="mm">Intel Core i9-9900K, 4.9GHz</li>
-  <li class ="mm">2 x NVIDIA GeForce RTX 2080 Ti 11GB SLI</li>
-  <li class ="mm">32GB (4 x 8GB) DDR4 3200MHz</li>
-  <li class ="mm">2 x 500GB Samsung 970 EVO SSD</li>
-  <li class ="mm">1000W, 80+ Gold</li>
+<h2 class="comptitle"><strong>Futurex</strong></h2>
+<ul class="specs">
+  <li class="mm">Intel Core i9-9900K, 4.9GHz</li>
+  <li class="mm">2 x NVIDIA GeForce RTX 2080 Ti 11GB SLI</li>
+  <li class="mm">32GB (4 x 8GB) DDR4 3200MHz</li>
+  <li class="mm">2 x 500GB Samsung 970 EVO SSD</li>
+  <li class="mm">1000W, 80+ Gold</li>
 </ul>
-<!--///////////////////////////////////////////////////-->
-
-
-<!--_______________________________________________________-->
-
-
-
-
-
-<button id="readmore2">Read more</button>
-
-
-<!-- The Modal2 -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content2 -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <ul class="readmoreinfo" style="list-style-type:none;">
-<br>
-<li><strong>Hinta: 2399€</strong></li>
-<br>
-<li>Tekniset tiedot:</li>
-<br>
-<li>Komponenttilistaus</li>
-<li>Prosessori: Intel Core i9-9900K, 4.9GHz</li>
-<li>Emolevy: ASUS AMD B450 Xtreme</li>
-<li>Näytönohjain: 2 x NVIDIA GeForce RTX 2080 Ti 11GB SLI</li>
-<li>Keskusmuisti: 32GB (4 x 8GB) DDR4 3200MHz</li>
-<li>Massamuisti: 2 x 500GB Samsung 970 EVO SSD</li>
-<li>Optinen asema: - (HUOM! Kotelossa ei ole paikkaa sisäiselle optiselle asemalle!)</li>
-<li>Prosessorijäähdytys: AMD Wraith Spire</li>
-<li>Kotelo: Fractal Design Define K Ben's Edition</li>
-<li>Virtalähde: 1000W, 80+ Gold</li>
-<li>Käyttöjärjestelmä: Esiasennettu Windows 10 Home 64-bit FI, ENG, SWE</li>
-<br>
-<li>Liitännät:</li>
-<br>
-<li>DVI-D / HDMI x 2 / DisplayPort x 2</li>
-<li>USB 3.1 Gen2 Type-A x 2</li>
-<li>USB 3.1 Gen1 Type-C x 1</li>
-<li>USB 3.1 Gen1 Type-A x 2</li>
-<li>USB 3.0 x 2 (edessä 2)</li>
-<li>USB 2.0 x 2</li>
-<li>PS/2 x 1 (hiiri/näppäimistö kombo)</li>
-<li>RJ45 x 1</li>
-<li>Analogiset 3.5mm ääniliitännät (takana, edessä 3.5 sisään- ja ulostulo), optinen ääniulostulo x 1</li>
-<br>
-<li>Laajennuspaikat:</li>
-<br>
-<li>DDR4 DIMM x 2</li>
-<li>PCI-e 3.0 x16 x 1</li>
-<li>PCI-e 2.0 x1 x 3</li>
-<li>SATA3 x 6</li>
-<li>3.5” x 2</li>
-<li>2.5" x 3</li></ul>
-  </div>
-
-
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("readmore2");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-} 
-</script>
-
+<img src="/images/pc2.jpg" alt=" " height="220" width="220" class="comppic">
+</div>
+</div>
+</section>
+</div>
 </div>
 </template>
-
-
-
