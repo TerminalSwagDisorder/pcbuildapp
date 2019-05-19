@@ -668,6 +668,12 @@ border-top: solid 1px black;
   right: 50px;
 top: 50px;
 } 
+.inpprc {
+width: 180px;
+position: relative;
+left: 5px;
+right: 0;
+}
 
 textarea {
  resize: vertical;
@@ -683,4 +689,5 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */
+    color: black;
 }

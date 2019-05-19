@@ -1,9 +1,5 @@
 <template name="completed">
 
-
-
-
-
 <div class="formen">
 
 <div id="app">
@@ -18,15 +14,11 @@
 
       <h3 class="h3comp">Please set your price</h3>
 <br>
-<p style="color:white;">Budget:<br>
- <input type="number" name="Price" style="width:180px;"> €</p>
-
-
+<p style="color:white;"> <abbr title="Minimum price is 500€ in increments of 1€">Budget:</abbr></p><br>
+<input onClick="this.setSelectionRange(0, this.value.length); this.select();" class="inpprc" type="number" name="Price" value="1000" min="500" step="1" required>€<br>
 
 
 <hr>
-
-
 
                          <div class="streck" id="cont2">
                             <h3 style="color:white;">Computer Type</h3>
@@ -246,7 +238,7 @@
 </ul>
 <img src="/images/pc2.jpg" alt=" " height="220" width="220" class="comppic">
 </div>
-</div>
+</div>	
 </section>
 </div>
 </div>
