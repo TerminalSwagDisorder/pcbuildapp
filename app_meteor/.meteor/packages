@@ -41,3 +41,7 @@ vue:vue
 akryum:vue-component
 akryum:vue
 dburles:mongo-collection-instances
+
+accounts-ui
+accounts-password
+
