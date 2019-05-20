@@ -691,3 +691,26 @@ input[type=number] {
     -moz-appearance:textfield; /* Firefox */
     color: black;
 }
+#table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+font-size: 17px;
+}
+
+#table tr:nth-child(even){background-color: green;}
+
+#table tr:hover {background-color: blue;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}

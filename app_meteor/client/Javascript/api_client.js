@@ -110,7 +110,3 @@ Meteor.call('wireless', function(err,res){
 }
 
 });
-
-
-
-

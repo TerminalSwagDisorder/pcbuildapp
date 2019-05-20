@@ -1,15 +1,36 @@
-<template name="placeholder">
-
-
-
-</template>
-
 <template name="test">
-<div class="index">
-<ul>
-<li>{{#each res}}
-    {{> res}}
-    {{/each}}</li>
-</ul>
-</div>
+<table id="table">
+<tbody>
+ <tr>
+<th>id</th>
+<th>name</th>
+<th>core-count</th>
+<th>core-clock</th>
+<th>boost-clock</th>
+<th>tdp</th>
+<th>integrated-graphics</th>
+<th>simultaneous-multithreading</th>
+<th>ratings-count</th>
+<th>price</th>
+
+</tr>
+ {{#each cpu}}
+<tr>
+
+
+<td>{{id}}</td>
+<td>{{name}}</td>
+<td>{{[core-count]}}</td>
+<td>{{[core-clock]}}</td>
+<td>{{[boost-clock]}}</td>
+<td>{{tdp}}</td>
+<td>{{[integrated-graphics]}}</td>
+<td>{{[simultaneous-multithreading]}}</td>
+<td>{{[ratings-count]}}</td>
+<td>{{price}}</td>
+
+ </tr>
+ {{/each}}
+</tbody>
+</table>
 </template>

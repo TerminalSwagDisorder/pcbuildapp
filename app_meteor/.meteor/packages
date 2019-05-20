@@ -17,7 +17,7 @@ ecmascript@0.12.4              # Enable ECMAScript2015+ syntax in app code
 shell-server@0.4.0            # Server-side component of the `meteor shell` command
 
 blaze-html-templates    # Compile .html files into Meteor Blaze views
-session@1.2.0                 # Client-side reactive dictionary for your app
+session                 # Client-side reactive dictionary for your app
 jquery@1.11.4                  # Helpful client-side library
 
 
