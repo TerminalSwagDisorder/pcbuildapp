@@ -29,6 +29,7 @@ Meteor.methods({
   }
 });
 */
+
 Meteor.methods({
   
   'cpu': function () {
@@ -36,7 +37,7 @@ Meteor.methods({
     // Construct the URL
 
 //get this to get every separate url
-    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-37756f4/cpu.json?_size=max&_shape=array';
+    var apiUrl = 'http://localhost:8001/pcbuildapp_new_db-f9bb85e/cpu.json?_size=max&_shape=array';
     // query the API
     var response = HTTP.get(apiUrl).data;
     return response;

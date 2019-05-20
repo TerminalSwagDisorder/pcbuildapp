@@ -1,0 +1,245 @@
+<template name="completed">
+
+<div class="formen">
+
+<div id="app">
+<div id="mySidenav" class="sidenav">
+<form class="sidebar">
+
+
+<div class="but2">
+ <input class="form-control" type="text" placeholder="Name" aria-label="Search">
+</div>
+
+
+      <h3 class="h3comp">Please set your price</h3>
+<br>
+<p style="color:white;"> <abbr title="Minimum price is 500€ in increments of 1€">Budget:</abbr></p><br>
+<input onClick="this.setSelectionRange(0, this.value.length); this.select();" class="inpprc" type="number" name="Price" value="1000" min="500" step="1" required>€<br>
+
+
+<hr>
+
+                         <div class="streck" id="cont2">
+                            <h3 style="color:white;">Computer Type</h3>
+                            <div id="compchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>Memory</h4>
+  </li>
+                                    <li>
+                                        <label for="title_2">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1" id="pref1" name="ram" value="4GB" >
+                                                Gaming
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_3">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1"  id="pref2" name="ram" value="8GB">
+                                                Surfing
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_4">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1"  id="pref3" name="ram" value="16GB">
+                                                Office
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_5">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1"  id="pref4" name="ram" value="32GB">
+                                                Server
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+<hr>
+
+
+
+                         <div id="cont2">
+                            <h3 style="color:white;">Set preferences (Optional)</h3>
+                            <div id="compchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>Memory</h4>
+  </li>
+                                    <li>
+                                        <label for="title_2">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1" id="pref1" name="ram" value="4GB" >
+                                                4GB
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_3">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1"  id="pref2" name="ram" value="8GB">
+                                                8GB
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_4">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1"  id="pref3" name="ram" value="16GB">
+                                                16GB
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_5">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup1"  id="pref4" name="ram" value="32GB">
+                                                32GB
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="compchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>CPU</h4>
+                                    </li>
+                                    <li>
+                                        <label for="title_2">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup2" id="pref1-2" name="cpu" value="AMD" >
+                                                AMD
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_3">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup2"  id="pref2-2" name="cpu" value="Intel">
+                                                Intel
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="compchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>GPU</h4>
+                                    </li>
+                                    <li>
+                                        <label for="title_2">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup3" id="pref1-3" name="gpu" value="AMD" >
+                                                AMD
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_3">
+                                            <div class="compchk">
+                                                <input type="checkbox" class="prefgroup3"  id="pref2-3" name="gpu" value="Nvidia">
+                                                Nvidia
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="compchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>Network</h4>
+                                    </li>
+                                    <div class="compchk">
+                                        <li>
+                                            <input type="checkbox" class="prefgroup4" id="pref1-4" name="network" value="USB" >
+                                            <label for="title_2">USB Wireless</label>
+                                        </li>
+                                    </div>
+                                    <div class="compchk">
+                                        <li>
+                                            <input type="checkbox" class="prefgroup4"  id="pref2-4" name="network" value="PCIe">
+                                            <label for="title_3">PCIe Wireless</label>
+                                        </li>
+                                    </div>
+                                    <div class="compchk">
+                                        <li>
+                                            <input type="checkbox" class="prefgroup4"  id="pref3-4" name="network" value="100 Mbit/s">
+                                            <label for="title_4">100 Mbit/s</label>
+                                        </li>
+                                    </div>
+                                    <div class="compchk">
+                                        <li>
+                                            <input type="checkbox" class="prefgroup4"  id="pref4-4" name="network" value="1000 Mbit/s">
+                                            <label for="title_5">PCIe 1000 Mbit/s</label>
+                                        </li>
+                                    </div>
+                                    <div class="compchk">
+                                        <li>
+                                            <input type="checkbox" class="prefgroup4"  id="pref5-4" name="network" value="USB 1000 Mbit/s">
+                                            <label for="title_6"> USB 1000 Mbit/s</label>
+                                        </li>
+                                    </div>
+                                    <div class="compchk">
+                                        <li>
+                                            <input type="checkbox" class="prefgroup4"  id="pref6-4" name="network" value="10 Gbit/s">
+                                            <label for="title_7">10 Gbit/s</label>
+                                        </li>
+                                    </div>
+                                </ul>
+                                </div>
+                                </div>
+</div>
+
+
+</form>
+<hr>
+      <h3 class="strek"></h3>
+
+
+
+                               <div class="but2">
+                                    <input type="submit" value="Search">
+                            </div>
+</div>
+<section id="main">
+<div id="inlineblock">
+<div class="completedbuilds">
+
+<h2 class="comptitle"><strong>Jaded</strong></h2>
+<ul class="specs">
+  <li class="mm">AMD Ryzen 5 2600, 3.4GHz</li>
+  <li class="mm">NVIDIA Geforce GTX 1070, 8GB GDDR5</li>
+  <li class="mm">16GB (2 x 8GB) DDR4 3000MHz</li>
+  <li class="mm">250GB M.2 NVMe SSD</li>
+  <li class="mm">650W 80+</li>
+</ul>
+<img src="/images/pc1.jpg" alt=" " height="220" width="220" class="comppic">
+</div>
+
+<div class="completedbuilds">
+
+<h2 class="comptitle"><strong>Futurex</strong></h2>
+<ul class="specs">
+  <li class="mm">Intel Core i9-9900K, 4.9GHz</li>
+  <li class="mm">2 x NVIDIA GeForce RTX 2080 Ti 11GB SLI</li>
+  <li class="mm">32GB (4 x 8GB) DDR4 3200MHz</li>
+  <li class="mm">2 x 500GB Samsung 970 EVO SSD</li>
+  <li class="mm">1000W, 80+ Gold</li>
+</ul>
+<img src="/images/pc2.jpg" alt=" " height="220" width="220" class="comppic">
+</div>
+</div>	
+</section>
+</div>
+</div>
+</template>

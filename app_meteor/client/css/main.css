@@ -45,6 +45,7 @@ body {
     background-image: url("/images/ny1.jpg");
     background-color: white;
 
+
 }
 
 
@@ -77,58 +78,7 @@ margin-left: 20px;
 
 
 
-.chkbogame {
-    position: relative;
-    top: 0px;
-    right: 30px;
-    bottom: 0px;
-    color: gray;
-}
-.chkbo1surf {
-    position: relative;
-    top: 0px;
-    right: 31px;
-    color: gray;
-}
-.chkbo2office {
-    position: relative;
-    top: 0px;
-    right: 37px;
-    color: gray;
-}
-.chkbo3server {
-    position: relative;
-    top: 0px;
-    right:33px;
-    color: gray;
-}
-
-
-
-
-
-
-.chkbo4low {
-    position: relative;
-    top: 0px;
-    right: 28px;
-    color: gray;
-}
-.chkbo5mid {
-    position: relative;
-    top: 0px;
-    right: 29px;
-    color: gray;
-}
-.chkbo6high {
-    position: relative;
-    top: 0px;
-    right: 25px;
-    color: gray;
-}
-
-
-
+/*
 
 .chkboxgame {
     position: relative;
@@ -150,31 +100,7 @@ margin-left: 20px;
     top: 0px;
     right:28px;
 }
-
-
-
-
-
-.chkbox4low {
-    position: relative;
-    top: 0px;
-    left: -21px;
-}
-.chkbox5mid {
-    position: relative;
-    top: 0px;
-    left: -23px;
-}
-.chkbox6high {
-    position: relative;
-    top: 0px;
-    left: -19px;
-}
-
-
-
-
-
+*/
 
 .formen {
 
@@ -188,7 +114,11 @@ text-align:center;
     align-content: center;
     text-align: center;
     border-style: solid;
-    border-width: 20px;
+    border-width: 20px;    position: relative;
+    top: 0px;
+    right: 30px;
+    bottom: 0px;
+    color: gray;
     border-color: red;
 }
 
@@ -254,36 +184,45 @@ left: 200px;
 
 /*Build guides lägg till guide form*/
 .formi {
-padding-bottom: 55px;
-margin-top: 50px;
-text-align: center;
-width: auto;
-margin-left:600px;
-margin-right:600px;
-margin-bottom:20px;
-padding-left: 10px;
-padding-right: 10px;
-background-color: rgba(218, 230, 232, 0.5);
-border-style:solid;
-border-width:1px;
-border-color: gray;
-}
 
+padding-bottom: 55px;
+padding:17px;
+text-align: center;
+width: 708px;
+max-width: 708px;
+min-width: 708px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+margin-bottom: 30px;
+margin-top: 30px;
+background-color: rgba(218, 230, 232, 0.9);
+border: solid 2.5px gray;
+
+}
 
 .btn {
     align-content: center;
     color: black;
-
 }
-
 
  /*Sidebar menu i completed*/
 .sidenav {
-    height: 876px ;
-    width: 300px; 
-position: relative;
-margin-top: -21px;
+height: 100%;
+    width: 250px;
+max-width: 250px; 
+min-width: 250px; 
+
+  z-index: 1; /* Stay on top */
     background-color:#333;
+
+  float: left;
+  margin-right: 10px;
+margin-top: -31px;
+clear: both;
 }
 
 /* Navigation menu links */
@@ -303,10 +242,6 @@ margin-top: -21px;
 .h3comp{
 color: white;
 }
-
-
-
-
 .strek {
 
 color: white
@@ -350,12 +285,6 @@ padding-right:15px;
 color: red;
 
 }
-
-
-
-
-
-
 
 .container.marketing {
 
@@ -434,38 +363,22 @@ border: none;
 */
 /*knapp på guides*/
 .but2 {
-  background-color: gray; /* Green */
+
+color: black;
   border: none;
-  color: white;
-  padding:10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  margin: 14px 12px;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
   cursor: pointer;
+  /*margin-left: calc(5vw + 1rem);*/
 }
-.but2 {
-  background-color: lightgray; 
-  color: black; 
-border: solid;
-border-color: #dae6e8;
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-
-
-    -webkit-box-shadow: 0px 0px 4px #dae6e8;
-       -moz-box-shadow: 0px 0px 4px #dae6e8;
-            box-shadow: 0px 0px 4px #dae6e8;
-
-}
-
 .but2:hover {
-  background-color: gray;
-  color: white;
+background: none;
+color: black;
 }
 
 /*knapp på completed sida*/
@@ -505,74 +418,71 @@ font-size-adjust: 0.35;
 }
 
 /*Set your requirements formen*/
-
 #app1 {
 padding:17px;
-margin-top: 50px;
 text-align: center;
-width: auto;
-margin-left:600px;
-margin-right:600px;
-margin-bottom:20px;
-padding-left: 10px;
-padding-right: 10px;
+width: 708px;
+max-width: 708px;
+min-width: 708px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+margin-bottom: 30px;
+margin-top: 30px;
 background-color: rgba(218, 230, 232, 0.9);
-border: solid;
-border-color: gray;
+border: solid 2.5px gray;
+
 }
 /* content på guides */
 .guides {
-position:relative;
-margin-left:525px;
-margin-right:600px;
+/*
 margin-top:50px;
-margin-bottom:70px;
-background-color:#dae6e8;
-border: 1px solid gray;
-width:850px;
-height:300px;
+margin-bottom:70px; */
+padding:17px;
+width: 785px;
+max-width: 785px;
+min-width: 785px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 background-color: rgba(218, 230, 232, 0.9);
+border: solid 2.5px gray;
+margin-bottom: 20px;
+
 }
 .insertedguide {
-
-position:relative;
-left:540px;
-bottom:350px;
 font-family:serif;
 font-size: 27px;
+
 }
 
 
 .insertedguidetext {
 
-position:relative;
-left:542px;
-bottom:330px;
 font-family:serif;
 font-size: 17px;
 max-width:500px;
 }
 .posted  {
 
-position:relative;
-left:540px;
-bottom:244px;
+ max-width:500px;
 font-family:sans-serif;
 font-size: 15px;
 }
 
 .pic {
-background-image: url("/images/atx.png");
-    height: 220px;
-    width: 220px;
-    background-size: cover;
-position:relative;
-margin-left:580px;
-margin-right:10px;
-margin-top:35px;
-border-style:solid;
-border-width: 0.5px;
-border-color:gray;
+  overflow: auto;
+  position: absolute;
+  right: 0px;
+top: 0;
+margin-top: 5px;
+margin-right: 5px;
 }
 
 /*slut content på guides*/
@@ -580,40 +490,40 @@ border-color:gray;
 /*content på completed*/
 
 .completedbuilds {
-position:relative;
-margin-left:425px;
-margin-right:600px;
-margin-top:10px;
-padding-top:40px;
-
-bottom:800px;
-background-color:#dae6e8;
-border: 1px solid gray;
-width:1000px;
-height:750px;
+z-index: -1;
+padding:17px;
+text-align: left;
+width: 775px;
+max-width: 775px;
+min-width: 775px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+margin-bottom: 30px;
+margin-top: 30px;
 background-color: rgba(218, 230, 232, 0.9);
+border: solid 2.5px gray;
+
+}
+#main {
+display: inline-block;
+
 }
 
-
-.comptitle1 {
-
-position:relative;
-left:530px;
-bottom:1535px;
-font-family:serif;
+.comptitle {
+text-align: center;
+font-family: serif;
 font-size: 27px;
 
 }
 
 
-.specs1 {
+.specs {
 
-position:relative;
-left:682px;
-bottom:1530px;
 font-family:serif;
 font-size: 17px;
-max-width:500px;
 }
 
 .pic2 {
@@ -634,29 +544,6 @@ padding-bottom:20px;
 }
 
 
-
-
-.comptitle2 {
-
-position:relative;
-left:510px;
-bottom:1700px;
-font-family:serif;
-font-size: 27px;
-
-}
-
-
-.specs2 {
-
-position:relative;
-left:682px;
-bottom:1690px;
-font-family:serif;
-font-size: 17px;
-max-width:500px;
-}
-
 .pic3{
 background-image: url("images/pc2.jpg");
 
@@ -674,15 +561,6 @@ border-width: 0.5px;
 border-color:gray;
 }
 
-.ss{
-position:relative;
-top:-1470px;
-border-style:solid;
-border-top: 30px;
-border-color:#c7d9da;
-margin-left:426px;
-margin-right:484px;
-}
 
 #readmore1  {
 
@@ -751,6 +629,7 @@ height:790px;
 background-color: rgba(218, 230, 232, 0.9);
 }
 
+<<<<<<< HEAD:app_meteor/client/main.css
 #login-buttons {
 
 float:right;
@@ -770,4 +649,90 @@ left:-150px!important;
 
 }
 
+=======
+#buildchk {
+text-align: left;
+    float: left;
+    margin: 11px;
+} 
+#compchk {
+text-align: left;
+    margin: 11px;
+color: white;
+position: relative;
+left: 20px;
+} 
+>>>>>>> 61f8c042e5a3a91e378199f261bae6c241951acd:app_meteor/client/css/main.css
 
+#cont {
+border-top: solid 1px black;
+}
+#typecont {
+    position: relative;
+    left: 254px;
+    right: 0;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+}
+
+#guidechk {
+    position: relative;
+    left: 254px;
+    right: 0;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+}
+
+.comppic {
+  position: absolute;
+  right: 50px;
+top: 50px;
+} 
+.inpprc {
+width: 180px;
+position: relative;
+left: 5px;
+right: 0;
+}
+
+textarea {
+ resize: vertical;
+    min-height: 34px;
+ }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+    color: black;
+}
+#table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+font-size: 17px;
+}
+
+#table tr:nth-child(even){background-color: green;}
+
+#table tr:hover {background-color: blue;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}

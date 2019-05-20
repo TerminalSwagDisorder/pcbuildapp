@@ -1,3 +1,4 @@
+console.log(Mongo.Collection.getAll())
 /*
 Meteor.call('whole_database', function(err,res){ 
     if (err) {  
@@ -30,6 +31,15 @@ Meteor.call('cpu', function(err,response){
 }
 });
 
+/*
+Meteor.call('cpu', function(err,response){ 
+    if (err) {  
+  console.log(err); 
+} else {
+    console.log(response);
+}
+});
+*/
 Meteor.call('cpu-cooler', function(err,res){ 
     if (err) {  
   console.log(err); 
@@ -100,5 +110,3 @@ Meteor.call('wireless', function(err,res){
 }
 
 });
-
-

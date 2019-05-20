@@ -1,0 +1,285 @@
+<template name="build2">
+    <div class="formen">
+        <div id="app1">
+            <form action="/PickParts">
+                <h1>Set your requirements</h1>
+                <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+                <section>
+                    <fieldset>
+                        <br>
+                        <div id="cont">
+                            <h3>Please set your price<strong><abbr title="required">*</abbr></strong></h3>
+                            <p><abbr title="Minimum price is 500€ in increments of 1€">Budget:</abbr></p><br>
+                            <input onClick="this.setSelectionRange(0, this.value.length); this.select();" type="number" name="Price" value="1000" min="500" step="1" required><br>
+                        </div>
+                        <br>
+                        <div id="cont">
+                            <h3>Computer type</h3>
+                            <div id="typecont">
+                                <ul style="list-style-type:none" id="typeul">
+                                    <li>
+                                            <div class="typechk">
+                                                <input type="radio" id="title_1" name="type" value="none" checked>
+                                            <label for="title_1">Any </label>
+                                            </div>
+                                       
+                                    </li>
+                                    <li>
+                                            <div class="typechk">
+                                                <input type="radio" id="title_1" name="type" value="Gaming" >
+                                                <label for="title_2">Gaming </label>
+                                            </div>
+                                    </li>
+                                    <li>
+                                       
+                                            <div class="typechk">
+                                                <input type="radio" id="title_2" name="type" value="Surfing">
+                           <label for="title_3">Surfing </label>
+                                            </div>
+                                    </li>
+                                    <li>
+                                        
+                                            <div class="typechk">
+                                                <input type="radio" id="title_3" name="type" value="Office">
+                                                <label for="title_4">Office</label>
+                                            </div>
+                                        
+                                    </li>
+                                    <li>
+                                        
+                                            <div class="chkboxgame">
+                                                <input type="radio" id="title_4" name="type" value="Server">
+                                              <label for="title_5">  Server </label>
+                                            </div>
+                                       
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="cont">
+                            <h3>Set preferences (Optional)</h3>
+                            <div id="buildchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>Memory</h4>
+                                    </li>
+                                    <li>
+                                        <label for="title_1">
+                                            <div class="memchk">
+                                                <input type="radio" class="prefgroup1"  id="pref0" name="ram" value="none" checked>
+                                                None
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_2">
+                                            <div class="memchk">
+                                                <input type="radio" class="prefgroup1" id="pref1" name="ram" value="4GB" >
+                                                4GB 
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_3">
+                                            <div class="memchk">
+                                                <input type="radio" class="prefgroup1"  id="pref2" name="ram" value="8GB">
+                                                8GB 
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_4">
+                                            <div class="memchk">
+                                                <input type="radio" class="prefgroup1"  id="pref3" name="ram" value="16GB">
+                                                16GB
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_5">
+                                            <div class="memchk">
+                                                <input type="radio" class="prefgroup1"  id="pref4" name="ram" value="32GB">
+                                                32GB
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="buildchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>CPU</h4>
+                                    </li>
+                                    <li>
+                                        <label for="title_1">
+                                            <div class="cpuchk">
+                                                <input type="radio" class="prefgroup2"  id="pref0-2" name="cpu" value="none" checked>
+                                                None
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_2">
+                                            <div class="cpuchk">
+                                                <input type="radio" class="prefgroup2" id="pref1-2" name="cpu" value="AMD" >
+                                                AMD
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_3">
+                                            <div class="cpuchk">
+                                                <input type="radio" class="prefgroup2"  id="pref2-2" name="cpu" value="Intel">
+                                                Intel
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="buildchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>GPU</h4>
+                                    </li>
+                                    <li>
+                                        <label for="title_1">
+                                            <div class="gpuchk">
+                                                <input type="radio" class="prefgroup3"  id="pref0-3" name="gpu" value="none" checked>
+                                                None
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_2">
+                                            <div class="gpuchk">
+                                                <input type="radio" class="prefgroup3" id="pref1-3" name="gpu" value="AMD" >
+                                                AMD
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="title_3">
+                                            <div class="gpuchk">
+                                                <input type="radio" class="prefgroup3"  id="pref2-3" name="gpu" value="Nvidia">
+                                                Nvidia
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="buildchk">
+                                <ul style="list-style-type:none">
+                                    <li>
+                                        <h4>Network</h4>
+                                    </li>
+                                    <div class="netchk">
+                                        <li>
+                                            <input type="radio" class="prefgroup4"  id="pref0-4" name="network" value="none" checked>
+                                            <label for="title_1">None</label>
+                                        </li>
+                                    </div>
+                                    <div class="netchk">
+                                        <li>
+                                            <input type="radio" class="prefgroup4" id="pref1-4" name="network" value="USB" >
+                                            <label for="title_2">USB Wireless</label>
+                                        </li>
+                                    </div>
+                                    <div class="netchk">
+                                        <li>
+                                            <input type="radio" class="prefgroup4"  id="pref2-4" name="network" value="PCIe">
+                                            <label for="title_3">PCIe Wireless</label>
+                                        </li>
+                                    </div>
+                                    <div class="netchk">
+                                        <li>
+                                            <input type="radio" class="prefgroup4"  id="pref3-4" name="network" value="100 Mbit/s">
+                                            <label for="title_4">100 Mbit/s</label>
+                                        </li>
+                                    </div>
+                                    <div class="netchk">
+                                        <li>
+                                            <input type="radio" class="prefgroup4"  id="pref4-4" name="network" value="1000 Mbit/s">
+                                            <label for="title_5">PCIe 1000 Mbit/s</label>
+                                        </li>
+                                    </div>
+                                    <div class="netchk">
+                                        <li>
+                                            <input type="radio" class="prefgroup4"  id="pref5-4" name="network" value="USB 1000 Mbit/s">
+                                            <label for="title_6"> USB 1000 Mbit/s</label>
+                                        </li>
+                                    </div>
+                                    <div class="netchk">
+                                        <li>
+                                            <input type="radio" class="prefgroup4"  id="pref6-4" name="network" value="10 Gbit/s">
+                                            <label for="title_7">10 Gbit/s</label>
+                                        </li>
+                                    </div>
+                                </ul>
+                                </div>
+                                <div class="but2">
+                                    <input type="submit" value="Build My PC">
+                            </div>
+                        </div>
+                    </fieldset>
+                </section>
+            </form>
+        </div>
+    </div>
+</template>
+<template name="postSubmit">
+    <table>
+        <tr>
+            {{#each cases}}
+            <td>{{ext525b}}</td>
+            <td>{{id}}</td>
+            <td>{{int35b}}</td>
+            <td>{{name}}</td>
+            <td>{{price}}</td>
+            <td>{{ratings}}</td>
+            <td>{{type}}</td>
+            {{/each}}
+        </tr>
+    </table>
+</template>
+<template name="orderList">
+    <!-- order table -->
+    <div class="hpanel hgreen">
+        <div class="panel-heading hbuilt">
+        </div>
+        <div class="panel-body">
+            <div class="table-collapse">
+                <table class="table table-condensed table-bordered">
+                    <thead>
+                        <tr>
+                            <th>{{mf 'Ext525b' 'Total'}}</th>
+                            <th>{{mf 'Id' 'Items'}}</th>
+                            <th>{{mf 'Int35b' 'int'}}</th>
+                            <th>{{mf 'Name' 'name'}}</th>
+                            <th>{{mf 'Price' 'price'}}</th>
+                            <th>{{mf 'Popularity' 'ratings'}}</th>
+                            <th>{{mf 'Type' 'type'}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each sortedOrders}}
+                        {{> orderItem}}
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</template>
+<template name="orderItem">
+    <tr class="{{rowStyle status}}">
+        <td data-label="Total">{{ext525b}}</td>
+        <td data-label="Items">{{id}}</td>
+        <td data-label="int">{{int35b}}</td>
+        <td data-label="name">{{name}}</td>
+        <td data-label="price">{{price}}</td>
+        <td data-label="ratings">{{ratings}}</td>
+        <td data-label="type">{{type}}</td>
+    </tr>
+</template>
+
