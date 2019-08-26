@@ -1,5 +1,6 @@
-To run the app sucessfully:
+To run the app sucessfully
 
+____________________________________________
 
 
 First: datasette pcbuildapp_new_db.db --cors 
