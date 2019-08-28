@@ -1,6 +1,6 @@
 To run the app sucessfully
 
-____________________________________________
+___________________________________________________________________________
 
 
 datasette pcbuildapp_new_db.db --cors 
@@ -10,3 +10,9 @@ datasette pcbuildapp_new_db.db --cors
 NO_HMR=1 meteor
 
     [in ~/github/pcbuildapp/app_meteor]
+
+
+___________________________________________________________________________
+___________________________________________________________________________
+
+When in browser go to /test to check temporary table taken from datasette

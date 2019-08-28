@@ -1,0 +1,13 @@
+Run first: datasette pcbuildapp_new_db.db --cors 
+[in ~/github/pcbuildapp/db_and_datasette]
+
+Run after: NO_HMR=1 meteor
+[in ~/github/pcbuildapp/app_meteor]
+
+
+
+On the build page (index) try to do a SQL join query where you combine the price of all the parts with sum(?)
+
+Also on the same page on every put a value (maybe?) with an sql query (for example if only an AMD CPU is selected then give a value of either "select * from cpu where "name" like '%AMD%'" or "http://localhost:8001/pcbuildapp-1170c5b?sql=select+*+from+cpu+where+%22name%22+like+%27%25AMD%25%27"
+
+

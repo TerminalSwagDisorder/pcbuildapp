@@ -58,3 +58,8 @@ FlowRouter.route('/PickParts', {
     BlazeLayout.render('MainLayout', {main: 'PickParts'});
   }
 });
+FlowRouter.notFound = {
+  action() {
+    BlazeLayout.render('MainLayout', {main: 'notfound'});
+  }
+};

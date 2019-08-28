@@ -7,9 +7,22 @@ background-color: #333;
 color:#fff;
 }
 
+footer {
+overflow: hidden;
+background-color: rgba(51, 51, 51, 1);
+font-size: 15px;
+color: rgba(255,255,255,.7);
+padding-top: 20px;
+padding-bottom: 5px;
+border-top: solid 1px black;
 
-
+}
+b {
+font-weight: 550;
+}
 .block {
+border-left: solid 1px #999;
+/*
 border-left: solid;
 border-right: solid;
 border-width: 1px;
@@ -20,8 +33,23 @@ border-color: #dae6e8;
     -webkit-box-shadow: 0px 0px 4px #4195fc;
        -moz-box-shadow: 0px 0px 4px #4195fc;
             box-shadow: 0px 0px 4px #4195fc;
+*/
 }
+.block .login {
+padding: 15px;
+border-right: solid 1px #999;
+}
+
+.navbar-inverse .navbar-brand {
+color: rgba(255, 255, 255, 0.7);
+}
+.navbar-inverse .navbar-brand:hover {
+color: rgba(255, 255, 255, 1);
+}
+
 .navbar-brand {
+border-left: solid 1px #999;
+/*
 border-left: solid;
 border-right: solid;
 border-width: 1px;
@@ -32,13 +60,21 @@ border-color: #dae6e8;
     -webkit-box-shadow: 0px 0px 4px #4195fc;
        -moz-box-shadow: 0px 0px 4px #4195fc;
             box-shadow: 0px 0px 4px #4195fc;
+*/
 }
+
 .navbar-inverse {
     border-width: none;
 }
-
-
+.navbar-inverse .navbar-nav > li > a{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: rgba(255, 255, 255, 1);
+}
 body {
+    height: 100%;
     min-height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,32 +112,6 @@ font-size: 20px;
 margin-left: 20px;
 }
 
-
-
-/*
-
-.chkboxgame {
-    position: relative;
-    top: 0px;
-    right: 25px;
-}
-.chkbox1surf {
-    position: relative;
-    top: 0px;
-    right: 26px;
-}
-.chkbox2office {
-    position: relative;
-    top: 0px;
-    right: 32px;
-}
-.chkbox3server {
-    position: relative;
-    top: 0px;
-    right:28px;
-}
-*/
-
 .formen {
 
 text-align:center;
@@ -134,37 +144,35 @@ text-align:center;
 }
 */
 
+.homecontent {
+margin-left: auto;
 
-
-
-
+}
 
 
 /*Home page first content*/
 .con1{
-
 margin-top: 50px;
 text-align: center;
 width: auto;
-padding-left: 100px;
-padding-right: 100px;
-background-color: rgba(218, 230, 232, 0.3);
-
-
-}
-/*Home page second content*/
-.con2{
-
-
-margin-top: 50px;
-margin-bottom: 100px;
-text-align: center;
-width: 100%;
 padding-left: 200px;
 padding-right: 200px;
 background-color: rgba(218, 230, 232, 0.3);
 
 
+}
+.homeli {
+list-style: none;
+}
+/*Home page second content*/
+.con2{
+margin-top: 50px;
+margin-bottom: 100px;
+text-align: center;
+width: auto;
+padding-left: 200px;
+padding-right: 200px;
+background-color: rgba(218, 230, 232, 0.3);
 
 }
 
@@ -215,14 +223,12 @@ height: 100%;
     width: 250px;
 max-width: 250px; 
 min-width: 250px; 
-
   z-index: 1; /* Stay on top */
     background-color:#333;
-
-  float: left;
+position: relative;
+left: 43.5%;
   margin-right: 10px;
 margin-top: -31px;
-clear: both;
 }
 
 /* Navigation menu links */
@@ -238,6 +244,7 @@ clear: both;
 .sidenav a:hover {
     color: #f1f1f1;
 }
+
 
 .h3comp{
 color: white;
@@ -631,14 +638,28 @@ background-color: rgba(218, 230, 232, 0.9);
 
 <<<<<<< HEAD:app_meteor/client/main.css
 #login-buttons {
-
 float:right;
 margin-right: 10px;
 margin-top:10px;
 
 }
-.accounts-dialog{
+#login-buttons a {
+text-decoration: none;
+color: rgba(255, 255, 255, 0.7);
+font-size: 15px;
+}
+#login-buttons a:hover {
+color: rgba(255, 255, 255, 1);
+}
+.accounts-dialog {
+color: #000;
 margin-right:60px;
+}
+#login-buttons .login-close-text {
+color: #000;
+}
+#login-buttons .login-close-text:hover {
+color: rgba(0, 0, 0, 0.7);
 }
 
 #login-dropdown-list {
@@ -651,6 +672,7 @@ left:-150px!important;
 
 =======
 #buildchk {
+
 text-align: left;
     float: left;
     margin: 11px;
